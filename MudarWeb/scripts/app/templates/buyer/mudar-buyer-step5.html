@@ -1,0 +1,78 @@
+﻿
+<div class="portlet light">
+    <div class="portlet-title">
+        <div class="caption font-green" style="text-align:center">
+            <span class="caption-subject bold"> Buyer Bank Information</span>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <div class="form-group form-md-radios">
+            <div class="md-radio-inline" style="text-align: center;">
+                <div class="md-radio">
+                    <input type="radio" id="rbtnBank" value="1" ng-model="buyerInfo.bankorConsignee"
+                           name="bankType" class="md-radiobtn" ng-click="buyerStep5Ctrl.OnBankOrConsignee('1')"/>
+                    <label for="rbtnBank">
+                        <span class="inc"></span>
+                        <span class="check"></span>
+                        <span class="box"></span>  If Documnet routing is through Bank
+                    </label>
+                </div>
+                <div class="md-radio">
+                    <input type="radio" id="rbtnConsignee" value="0" ng-model="buyerInfo.bankorConsignee"
+                           name="bankType" class="md-radiobtn">
+                    <label for="rbtnConsignee">
+                        <span class="inc"></span>
+                        <span class="check"></span>
+                        <span class="box"></span> Consignee
+                    </label>
+                </div>
+            </div>
+        </div>
+        <form role="form" name="frmUserInfo" novalidate>
+            <div class="form-body">
+                <div ng-if="buyerInfo.bankorConsignee">
+                    <div class="form-group form-md-line-input">
+                        <input type="text" class="form-control" required ng-model="buyerInfo.bankName" />
+                        <label for="form_control_1">
+                            {{buyerInfo.bankorConsignee == '1'?"Bank" : "Consignee"}} Name
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                    <div class="form-group form-md-line-input">
+                        <input type="text" id="txtAddrLn1" class="form-control" ng-model="buyerInfo.bankAddressLine1" />
+                        <label for="txtAddrLn1">Address Line 1</label>
+                    </div>
+                    <div class="form-group form-md-line-input">
+                        <input type="text" id="txtAddrLn2" class="form-control" ng-model="buyerInfo.bankAddressLine2" />
+                        <label for="txtAddrLn2">Address Line 2</label>
+                    </div>
+                    <div class="form-group form-md-line-input">
+                        <input type="text" id="txtCity" class="form-control" ng-model="buyerInfo.bankCity" />
+                        <label for="txtCity">City</label>
+                    </div>
+                    <div class="form-group form-md-line-input">
+                        <input type="text" id="txtState" class="form-control" ng-model="buyerInfo.bankState" />
+                        <label for="txtState">Province/State</label>
+                    </div>
+                    <div class="form-group form-md-line-input">
+                        <input type="text" id="txtzipcode" class="form-control" ng-model="buyerInfo.bankPincode" />
+                        <label for="txtzipcode">Zip Code</label>
+                    </div>
+                    <div class="form-group form-md-line-input">
+                        <input type="text" id="txtCountry" class="form-control" ng-model="buyerInfo.bankCountry" />
+                        <label for="txtCountry">Country</label>
+                    </div>
+                </div>
+                <a href="javascript:;" class="btn green button-submit pull-left" ng-click="buyerStep5Ctrl.previousStep()">
+                    <i class="fa fa-arrow-left"></i> Back
+                </a>
+                <a href="javascript:;" class="btn green button-submit pull-right" ng-click="buyerStep5Ctrl.nextStep()">
+                    Next
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+        </form>
+
+    </div>
+
+</div>

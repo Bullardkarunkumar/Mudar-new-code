@@ -1,0 +1,52 @@
+﻿
+<div class="portlet light">
+    <div class="portlet-title">
+        <div class="caption font-green" style="text-align:center">
+            <span class="caption-subject bold"> Port Information</span>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <form role="form" name="frmUserInfo" novalidate>
+            <div class="form-body">
+                <div class="form-group form-md-line-input">
+                    <select ng-model="buyerInfo.transportMode"
+                            class="form-control" name="transportMode" required>
+                        <option value="">Select Transport Mode</option>
+                        <option value="1">Air</option>
+                        <option value="2">Sea</option>
+                        <option value="3">Rail</option>
+                        <option value="4">Road</option>
+                    </select>
+                    <label for="form_control_1">
+                        Transport Mode
+                        <span class="required" aria-required="true">*</span>
+                    </label>
+                </div>
+                <div class="form-group form-md-line-input">
+                    <input type="text" id="txtairport" class="form-control" />
+                    <label for="txtairport">Nearest Airport</label>
+                </div>
+                <div class="form-group form-md-line-input">
+                    <input type="text" id="txtsea" class="form-control">
+                    <label for="txtsea">Nearest Sea Port</label>
+                </div>
+                <div class="form-group form-md-line-input">
+                    <input type="text" id="txtroad" class="form-control">
+                    <label for="txtroad">Nearest Road</label>
+                </div>
+                <div class="form-group form-md-line-input">
+                    <input type="text" id="txtrail" class="form-control">
+                    <label for="txtrail">Nearest Rail</label>
+                </div>
+                <a href="javascript:;" class="btn green button-submit pull-left" ng-click="buyerStep6Ctrl.previousStep()">
+                    <i class="fa fa-arrow-left"></i> Back
+                </a>
+                <a href="javascript:;" class="btn green button-submit pull-right" ng-click="buyerStep6Ctrl.nextStep()">
+                    Next
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+        </form>
+    </div>
+
+</div>

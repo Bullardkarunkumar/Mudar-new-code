@@ -1,0 +1,84 @@
+﻿<div class="portlet light">
+    <div class="portlet-title">
+        <div class="caption font-green">
+            <i class="icon-pin font-green"></i>
+            <span class="caption-subject bold"> Add/Update Employee</span>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <form role="form" name="frmUserInfo" ng-submit="userInfoCtrl.onEmployeeSave(frmUserInfo.$valid)" novalidate>
+            <div class="col-md-6">
+                <div class="form-body">
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': frmUserInfo.employeeFirstName.$invalid && frmUserInfo.employeeFirstName.$touched }">
+                        <input type="text" class="form-control" ng-model="userInfoCtrl.userInfo.employeeFirstName" name="employeeFirstName" required />
+                        <label for="form_control_1">
+                            First Name
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                    <div class="form-group form-md-line-input">
+                        <input type="text" id="employeeLastName" class="form-control" ng-model="userInfoCtrl.userInfo.employeeLastName" name="employeeLastName">
+                        <label for="branchName">Last Name</label>
+                    </div>
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': frmUserInfo.branch.$invalid && frmUserInfo.branch.$touched }">
+                        <select ng-model="userInfoCtrl.userInfo.branchId" class="form-control" name="branch" required>
+                            <option value="">Select Branch</option>
+                            <option ng-repeat="bnch in userInfoCtrl.branches" value="{{bnch.branchId}}">{{bnch.branchName}}</option>
+                        </select>
+                        <label for="form_control_1">
+                            Branch
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                    <div class="form-group form-md-line-input">
+                        <input type="text" id="phone" class="form-control" ng-model="userInfoCtrl.userInfo.phone" name="phone" />
+                        <label for="branchName">Phone Number</label>
+                    </div>
+                    <div class="form-group form-md-line-input">
+                        <input type="text" id="mPhone" class="form-control" ng-model="userInfoCtrl.userInfo.mphone" name="mphone" />
+                        <label for="branchName">Mobile Number</label>
+                    </div>
+                    <div class="form-group form-md-line-input ">
+                        <textarea class="form-control" ng-model="userInfoCtrl.userInfo.address" name="address"></textarea>
+                        <label for="form_control_1 ">Address</label>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-body">
+                    <div class="form-group form-md-line-input ">
+                        <input type="text" class="form-control" ng-model="userInfoCtrl.userInfo.district" name="district" />
+                        <label for="form_control_1 ">District</label>
+                    </div>
+                    <div class="form-group form-md-line-input ">
+                        <input type="text" class="form-control" ng-model="userInfoCtrl.userInfo.taluk" name="taluk" />
+                        <label for="form_control_1 ">Taluk</label>
+                    </div>
+                    <div class="form-group form-md-line-input ">
+                        <input type="text" class="form-control" ng-model="userInfoCtrl.userInfo.state" name="state" />
+                        <label for="form_control_1 ">State</label>
+                    </div>
+                    <div class="form-group form-md-line-input ">
+                        <input type="text" class="form-control" ng-model="userInfoCtrl.userInfo.country" name="country" />
+                        <label for="form_control_1 ">Country</label>
+                    </div>
+                    <div class="form-group form-md-line-input ">
+                        <input type="text" class="form-control" ng-model="userInfoCtrl.userInfo.city" name="city" />
+                        <label for="form_control_1 ">City</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions noborder" style="text-align:center">
+                <button type="submit" class="btn blue" ng-disabled="frmUserInfo.$invalid">
+                    <i class="fa fa-check"></i>
+                    Submit
+                </button>
+                <button type="button" class="btn default" ng-click="userInfoCtrl.gotoEmployees()">
+                    <i class="fa fa-times"></i>Cancel
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

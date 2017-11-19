@@ -1,0 +1,33 @@
+﻿<div class="portlet light">
+    <div class="portlet-title">
+        <div class="caption font-green">
+            <i class="icon-pin font-green"></i>
+            <span class="caption-subject bold"> Add/Update Category</span>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <form role="form" name="frmCategoryInfo" ng-submit="categoryInfoCtrl.onCategorySave(frmCategoryInfo.$valid)" novalidate>
+            <div class="row">                
+                <div class="form-body">
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': frmCategoryInfo.categoryName.$invalid && frmCategoryInfo.categoryName.$touched }">
+                        <input type="text" class="form-control" ng-model="categoryInfoCtrl.categoryInfo.categoryName" name="categoryName" required />
+                        <label for="form_control_1">
+                            Name
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions noborder row" style="text-align:center">
+                <button type="submit" class="btn blue" ng-disabled="frmCategoryInfo.$invalid">
+                    <i class="fa fa-check"></i>
+                    Submit
+                </button>
+                <button type="button" class="btn default" ng-click="categoryInfoCtrl.gotoCategories()">
+                    <i class="fa fa-times"></i>Cancel
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

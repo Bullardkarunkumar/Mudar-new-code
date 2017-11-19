@@ -1,0 +1,43 @@
+﻿<div class="portlet box green">
+    <div class="portlet-title">
+        <div class="caption">
+            <i class="fa fa-cogs"></i>Product List
+        </div>
+        <a href="javascript:;" id="btnNew" class="btn btn-success pull-right"
+           ng-click="productsCtrl.onProductEdit(null)">
+            <i class="fa fa-plus"></i> New
+        </a>
+    </div>
+    <div class="portlet-body flip-scroll">
+        <table class="table table-bordered table-striped table-condensed flip-content">
+            <thead class="flip-content">
+                <tr>
+                    <th> Product Name </th>
+                    <th> ItcHsCode </th>
+                    <th> ICS Product </th>
+                    <th> Specification </th>
+                    <th> </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-if="productsCtrl.products.length==0">
+                    <td colspan="5" align="center"> No Products found</td>
+                </tr>
+                <tr ng-repeat="product in productsCtrl.products">
+                    <td> {{product.productName}}</td>
+                    <td> {{product.itcHsCode}}</td>
+                    <td> {{product.categoryName}}</td>
+                    <td> {{product.specification}}</td>
+                    <td>
+                        <a href="javascript:;" class="btn btn-small btn-sm green" ng-click="productsCtrl.onProductEdit(product.productId)">
+                            <i class="fa fa-edit"></i> Edit
+                        </a>
+                        <a href="javascript:;" class="btn btn-small btn-sm red" ng-click="productsCtrl.onProductDelete(product.productId)">
+                            <i class="fa fa-trash-o"></i> Delete
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

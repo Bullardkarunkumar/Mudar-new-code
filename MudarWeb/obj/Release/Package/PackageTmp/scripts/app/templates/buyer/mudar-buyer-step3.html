@@ -1,0 +1,53 @@
+﻿
+<div class="portlet light">
+    <div class="portlet-title">
+        <div class="caption font-green" style="text-align:center">
+            <span class="caption-subject bold"> Product Registration</span>
+        </div>
+    </div>
+    <div>
+        <a href="javascript:;" class="btn green button-submit pull-right" ng-click="buyerStep3Ctrl.showProducts()">
+            Show Products
+        </a>
+    </div>
+    <div class="portlet-body form">
+        <div class="portlet-body flip-scroll" style="text-align:center">
+            <table class="table table-bordered table-striped table-condensed flip-content">
+                <thead class="flip-content">
+                    <tr>
+                        <th style="text-align:center">Sno</th>
+                        <th style="text-align:center"> Product Name </th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-if="buyerStep3Ctrl.products.length==0">
+                        <td colspan="5" align="center"> No Products found</td>
+                    </tr>
+                    <tr ng-repeat="product in buyerStep3Ctrl.products">
+                        <td>{{$index + 1}}</td>
+                        <td> {{product.productName}}</td>
+                        <td>
+                            <div class="md-checkbox has-success">
+                                <input type="checkbox" id="checkbox14" class="md-check">
+                                <label for="checkbox14">
+                                    <span class="inc"></span>
+                                    <span class="check"></span>
+                                    <span class="box"></span>
+                                </label>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+    <a href="javascript:;" class="btn green button-submit pull-left" ng-click="buyerStep3Ctrl.previousStep()">
+        <i class="fa fa-arrow-left"></i> Back
+    </a>
+    <a href="javascript:;" class="btn green button-submit pull-right" ng-click="buyerStep3Ctrl.nextStep()">
+        Next
+        <i class="fa fa-arrow-right"></i>
+    </a>
+</div>

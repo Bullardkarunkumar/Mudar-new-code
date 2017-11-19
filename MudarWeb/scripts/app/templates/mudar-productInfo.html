@@ -1,0 +1,72 @@
+﻿<div class="portlet light">
+    <div class="portlet-title">
+        <div class="caption font-green">
+            <i class="icon-pin font-green"></i>
+            <span class="caption-subject bold"> Add/Update Product</span>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <form role="form" name="frmProductInfo" ng-submit="productInfoCtrl.onProductSave(frmProductInfo.$valid)" novalidate>
+            <div class="row">
+                <div class="form-body">
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': frmProductInfo.productCode.$invalid && frmProductInfo.productCode.$touched }">
+                        <input type="text" class="form-control" ng-model="productInfoCtrl.productInfo.productCode" name="productCode" required />
+                        <label for="form_control_1">
+                            Code
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': frmProductInfo.productName.$invalid && frmProductInfo.productName.$touched }">
+                        <input type="text" class="form-control" ng-model="productInfoCtrl.productInfo.productName" name="productName" required />
+                        <label for="form_control_1">
+                            Name
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': productInfoCtrl.category.$invalid && productInfoCtrl.category.$touched }">
+                        <select ng-model="productInfoCtrl.productInfo.productCategory"
+                                ng-options="cat.categoryName for cat in productInfoCtrl.categories track by cat.categoryId"
+                                class="form-control" name="category" required>
+                            <option value="">Select Category</option>
+                        </select>
+                        <label for="form_control_1">
+                            Category
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': frmProductInfo.description.$invalid && frmProductInfo.description.$touched }">
+                        <textarea class="form-control" ng-model="productInfoCtrl.productInfo.description" name="description" required></textarea>
+                        <label for="form_control_1 ">
+                            Description
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': frmProductInfo.itcHsCode.$invalid && frmProductInfo.itcHsCode.$touched }">
+                        <input type="text" class="form-control" ng-model="productInfoCtrl.productInfo.itcHsCode" name="itcHsCode" required />
+                        <label for="form_control_1">
+                            ITCHS Code
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': frmProductInfo.specification.$invalid && frmProductInfo.specification.$touched }">
+                        <input type="text" class="form-control" ng-model="productInfoCtrl.productInfo.specification" name="itcHsCode" required />
+                        <label for="form_control_1">
+                            Specification
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions noborder row" style="text-align:center">
+                <button type="submit" class="btn blue" ng-disabled="frmProductInfo.$invalid">
+                    <i class="fa fa-check"></i>
+                    Submit
+                </button>
+                <button type="button" class="btn default" ng-click="productInfoCtrl.gotoProducts()">
+                    <i class="fa fa-times"></i>Cancel
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

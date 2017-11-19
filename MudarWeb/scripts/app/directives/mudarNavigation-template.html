@@ -1,0 +1,363 @@
+﻿<div class="page-sidebar-wrapper">
+    <div class="page-sidebar navbar-collapse collapse" ng-if="role=='SuperAdmin'">
+        <ul class="page-sidebar-menu  page-header-fixed page-sidebar-menu-hover-submenu"
+            data-keep-expanded="false" data-auto-scroll="true"
+            data-slide-speed="200">
+            <li class="nav-item start">
+                <a ui-sref='dashboard' class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Dashboard</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-toggle">
+                    <i class="icon-basket"></i>
+                    <span class="title">Orders List</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a ui-sref='pricelist' class="nav-link nav-toggle">
+                    <i class="icon-tag"></i>
+                    <span class="title">Price List</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-toggle">
+                    <i class="icon-users"></i>
+                    <span class="title">Administration</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+
+                <ul class="sub-menu">
+                    <li class="nav-item">
+                        <a ui-sref="branches" class="nav-link ">
+                            <span class="title">Manage Branch/ICS</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a ui-sref="users" class="nav-link ">
+                            <span class="title">Manage Users</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a ui-sref="categories" class="nav-link ">
+                            <span class="title">Manage Categories</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a ui-sref="products" class="nav-link ">
+                            <span class="title">Manage Products</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-toggle">
+                    <i class="icon-docs"></i>
+                    <span class="title">Supplier Info</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a ui-sref="buyerList" class="nav-link nav-toggle">
+                    <i class="icon-user"></i>
+                    <span class="title">Buyer Info</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-toggle">
+                    <i class="fa fa-check"></i>
+                    <span class="title">Buyer Approval</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-toggle">
+                    <i class="fa fa-truck"></i>
+                    <span class="title">Basic Farming</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="page-sidebar navbar-collapse collapse" ng-if="role=='Branch'">
+        <ul class="page-sidebar-menu  page-header-fixed page-sidebar-menu-hover-submenu"
+            data-keep-expanded="false" data-auto-scroll="true"
+            data-slide-speed="200">
+            <li class="nav-item start">
+                <a ui-sref='dashboard' class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Employee Dashboard</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>    
+            <li class="nav-item start">
+                <a href="#" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Track PO</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>  
+            <li class="nav-item start">
+                <a href="#" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Sample Request</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>  
+            <li class="nav-item start">
+                <a href="#" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Track the Lot</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item start">
+                <a href="#" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Supplier Info</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item start">
+                <a href="#" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Custom Agent</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>  
+            <li class="nav-item start">
+                <a href="#" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Unit Information</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li> 
+            <li class="nav-item start">
+                <a href="#" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Standard Data</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item start">
+                <a href="#" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Check Availale Qty</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item start">
+                <a href="#" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Add Buyer</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item start">
+                <a href="#" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Production List</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item start">
+                <a href="#" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Holidays List</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item start">
+                <a href="#" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Inspection Plan</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li> 
+        </ul>
+    </div>
+
+    <div class="page-sidebar navbar-collapse collapse" ng-if="role=='ICS'">
+        <ul class="page-sidebar-menu  page-header-fixed page-sidebar-menu-hover-submenu"
+            data-keep-expanded="false" data-auto-scroll="true"
+            data-slide-speed="200">
+            <li class="nav-item start">
+                <a href="#" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Dashboard</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item start">
+                <a href="#" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Farmer Info</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item start">
+                <a href="#" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Production Info</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item start">
+                <a href="#" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Inspection List</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item start">
+                <a href="#" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Farming Info</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item start">
+                <a href="#" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Track the Lot</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item start">
+                <a href="#" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Complaints</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item start">
+                <a href="#" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Reports</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="page-sidebar navbar-collapse collapse" ng-if="role=='Supplier'">
+        <ul class="page-sidebar-menu  page-header-fixed page-sidebar-menu-hover-submenu"
+            data-keep-expanded="false" data-auto-scroll="true"
+            data-slide-speed="200">
+            <li class="nav-item start">
+                <a ui-sref='dashboard' class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Supplier Dashboard</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="page-sidebar navbar-collapse collapse" ng-if="role=='ICSSupplier'">
+        <ul class="page-sidebar-menu  page-header-fixed page-sidebar-menu-hover-submenu"
+            data-keep-expanded="false" data-auto-scroll="true"
+            data-slide-speed="200">
+            <li class="nav-item start">
+                <a ui-sref='dashboard' class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">ICSSupplier Dashboard</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item start">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Pending Orders</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item start">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Add Prices</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item start">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Pre Order</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item start">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Profile</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+            <li class="nav-item start">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Reports</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="page-sidebar navbar-collapse collapse" ng-if="role=='Buyer'">
+        <ul class="page-sidebar-menu  page-header-fixed page-sidebar-menu-hover-submenu"
+            data-keep-expanded="false" data-auto-scroll="true"
+            data-slide-speed="200">
+            <li class="nav-item start">
+                <a ui-sref='dashboard' class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">Buyer Dashboard</span>
+                    <span class="selected"></span>
+                    <span class="arrow open"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>

@@ -1,0 +1,44 @@
+﻿
+<div class="portlet light">
+    <div class="portlet-title">
+        <div class="caption font-green" style="text-align:center">
+            <span class="caption-subject bold"> Contact Information</span>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <form role="form" name="frmUserInfo" novalidate>
+            <div class="form-body">
+                <div class="form-group form-md-line-input">
+                    <input type="text" class="form-control" required ng-model="buyerInfo.cContactPerson"/>
+                    <label for="form_control_1">
+                        Contact Person
+                        <span class="required" aria-required="true">*</span>
+                    </label>
+                </div>
+                <div class="form-group form-md-line-input">
+                    <input type="text" id="txtphone" class="form-control" ng-model="buyerInfo.cContactPhoneNo" />
+                    <label for="txtphone">Contat Phone #</label>
+                </div>
+                <div class="form-group form-md-line-input">
+                    <input type="text" id="txtmobiletext" class="form-control" ng-model="buyerInfo.mobileforTextingpurpose"/>
+                    <label for="txtmobiletext">Mobile # for Texting purpose</label>
+                </div>
+                <div class="form-group form-md-line-input">
+                    <input type="text" id="txtemail" class="form-control" ng-model="buyerInfo.email"/>
+                    <label for="txtemail">E-mail</label>
+                </div>
+                <div class="form-group form-md-line-input">
+                    <input type="text" id="txtwebsite" class="form-control" ng-model="buyerInfo.website"/>
+                    <label for="txtwebsite">Website</label>
+                </div>
+                <a href="javascript:;" class="btn green button-submit pull-left" ng-click="buyerStep2Ctrl.previousStep()">
+                    <i class="fa fa-arrow-left"></i> Back
+                </a>
+                <a href="javascript:;" class="btn green button-submit pull-right" ng-click="buyerStep2Ctrl.nextStep()">
+                    Next
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+        </form>
+    </div>
+</div>

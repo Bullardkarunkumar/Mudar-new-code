@@ -1,0 +1,76 @@
+﻿<div class="form-group form-md-radios">
+    <div class="md-radio-inline" style="text-align: center;">
+        <div class="md-radio">
+            <input type="radio" id="rbtnBranch" ng-model="branchCtrl.branchType" value="1"
+                   name="branchType" class="md-radiobtn" ng-click="branchCtrl.onSelectedOption()">
+            <label for="rbtnBranch">
+                <span class="inc "></span>
+                <span class="check"></span>
+                <span class="box"></span> Branch
+            </label>
+        </div>
+        <div class="md-radio">
+            <input type="radio" id="rbtnICS" ng-model="branchCtrl.branchType" value="0"
+                   name="branchType" class="md-radiobtn" ng-click="branchCtrl.onSelectedOption()">
+            <label for="rbtnICS">
+                <span class="inc"></span>
+                <span class="check"></span>
+                <span class="box"></span> ICS
+            </label>
+        </div>
+        <div class="md-radio">
+            <input type="radio" id="rbtnICSupplier" ng-model="branchCtrl.branchType" value="2"
+                   name="branchType" class="md-radiobtn" ng-click="branchCtrl.onSelectedOption()">
+            <label for="rbtnICSupplier">
+                <span class="inc"></span>
+                <span class="check"></span>
+                <span class="box"></span> ICS Supplier
+            </label>
+        </div>
+        <a href="javascript:;" id="btnNewBranch" class="btn btn-success pull-right"
+           ng-if="branchCtrl.branchType !=''"
+           ng-click="branchCtrl.onBranchSelected(null)">
+            <i class="fa fa-plus"></i> New
+        </a>
+    </div>
+</div>
+
+<div class="portlet box green" ng-if="branchCtrl.branchType !=''">
+    <div class="portlet-title">
+        <div class="caption">
+            <i class="fa fa-cogs"></i>{{branchCtrl.title}} List
+        </div>
+    </div>
+    <div class="portlet-body flip-scroll">
+        <table class="table table-bordered table-striped table-condensed flip-content">
+            <thead class="flip-content">
+                <tr>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>State</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-if="branchCtrl.branches.length == 0">
+                    <td colspan="4" align="center">
+                        No Branch/ICS found
+                    </td>
+                </tr>
+                <tr ng-repeat="itm in branchCtrl.branches">
+                    <td>{{itm.branchCode}}</td>
+                    <td> {{itm.branchName}}</td>
+                    <td> {{itm.state}}</td>
+                    <td>
+                        <a href="javascript:;" class="btn btn-small btn-sm green" ng-click="branchCtrl.onBranchSelected(itm.branchId)">
+                            <i class="fa fa-edit"></i> Edit
+                        </a>
+                        <a href="javascript:;" class="btn btn-small btn-sm red" ng-click="branchCtrl.onBranchDeleted(itm.branchId)">
+                            <i class="fa fa-trash-o"></i> Delete
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+﻿<div class="row justify-content-md-center">
+    <div class="col-md-auto">
+        <div class="form-horizontal">
+            <div class="form-wizard">
+                <div class="form-body">
+                    <ul class="nav nav-pills nav-justified steps" style="margin-bottom:0 !important">
+                        <li ng-repeat="stp in steps" class="{{stp.cssClass}}">
+                            <a href="#tab1" data-toggle="tab" class="step" aria-expanded="true">
+                                <span class="number"> {{stp.number}} </span>
+                                <span class="desc">
+                                    <i class="fa fa-check"></i>{{stp.title}}
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div id="bar" class="progress progress-striped" role="progressbar" style="margin-bottom:0!important">
+                        <div class="progress-bar progress-bar-success" style="width: {{progressWidth}};"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ui-view></ui-view>
+    </div>
+</div>

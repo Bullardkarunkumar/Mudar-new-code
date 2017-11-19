@@ -1,0 +1,57 @@
+﻿<div class="form-group form-md-radios">
+    <div class="md-radio-inline" style="text-align: center;">
+        <div class="md-radio" ng-repeat="rl in userCtrl.roles">
+            <input type="radio" id="radio{{$index}}" name="radio1" class="md-radiobtn" value="{{rl.branchRoleValue}}"
+                   ng-click="userCtrl.OnRoleSelected(rl.roleName)" ng-model="userCtrl.selectedRole">
+            <label for="radio{{$index}}">
+                <span class="inc"></span>
+                <span class="check"></span>
+                <span class="box"></span> {{rl.roleDisplayName}}
+            </label>
+        </div>
+        <a href="javascript:;" id="btnNewUser" class="btn btn-success pull-right"
+           ng-click="userCtrl.onUserSelected(null)">
+            <i class="fa fa-plus"></i> New
+        </a>
+    </div>
+</div>
+
+<div class="portlet box green">
+    <div class="portlet-title">
+        <div class="caption">
+            <i class="fa fa-cogs"></i>User List
+        </div>
+    </div>
+    <div class="portlet-body flip-scroll">
+        <table class="table table-bordered table-striped table-condensed flip-content">
+            <thead class="flip-content">
+                <tr>
+                    <th> User Name </th>
+                    <th> Branch Name </th>
+                    <th> City </th>
+                    <th> Mobile Phone </th>
+                    <th> </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-if="userCtrl.users.length==0">
+                    <td colspan="5" align="center"> No users found</td>
+                </tr>
+                <tr ng-repeat="usr in userCtrl.users">
+                    <td> {{usr.employeeFirstName}}</td>
+                    <td> {{usr.branchName}}</td>
+                    <td> {{usr.city}}</td>
+                    <td> {{usr.mphone}}</td>
+                    <td>
+                        <a href="javascript:;" class="btn btn-small btn-sm green" ng-click="userCtrl.onUserSelected(usr.employeeId)">
+                            <i class="fa fa-edit"></i> Edit
+                        </a>
+                        <a href="javascript:;" class="btn btn-small btn-sm red" ng-click="userCtrl.onUserDelete(usr.employeeId)">
+                            <i class="fa fa-trash-o"></i> Delete
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

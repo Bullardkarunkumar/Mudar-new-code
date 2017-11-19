@@ -1,0 +1,155 @@
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\obj\Debug\MudarService.csprojResolveAssemblyReference.cache
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\roslyn\csc.exe
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\roslyn\System.Collections.Immutable.dll
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\roslyn\System.Reflection.Metadata.dll
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\roslyn\vbc.exe
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\roslyn\VBCSCompiler.exe
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\roslyn\VBCSCompiler.exe.config
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\MudarService.dll.config
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\MudarService.dll
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\MudarService.pdb
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\EntityFramework.dll
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\EntityFramework.SqlServer.dll
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\Newtonsoft.Json.dll
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\System.Net.Http.Formatting.dll
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\System.Web.Http.dll
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\System.Web.Http.WebHost.dll
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\EntityFramework.xml
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\EntityFramework.SqlServer.xml
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\Newtonsoft.Json.xml
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\System.Net.Http.Formatting.xml
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\System.Web.Http.xml
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\System.Web.Http.WebHost.xml
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\obj\Debug\MudarService.dll
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\obj\Debug\MudarService.pdb
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\System.Web.Cors.dll
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\System.Web.Http.Cors.dll
+E:\Projects\Rekha\Bhanu\Angular 2 Samples\MudarService\MudarService\bin\System.Web.Http.Cors.xml
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\roslyn\csc.exe
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\roslyn\System.Collections.Immutable.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\roslyn\System.Reflection.Metadata.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\roslyn\vbc.exe
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\roslyn\VBCSCompiler.exe
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\roslyn\VBCSCompiler.exe.config
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\MudarService.dll.config
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\MudarService.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\MudarService.pdb
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\EntityFramework.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\EntityFramework.SqlServer.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\Newtonsoft.Json.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\System.Net.Http.Formatting.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\System.Web.Cors.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\System.Web.Http.Cors.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\System.Web.Http.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\System.Web.Http.WebHost.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\EntityFramework.xml
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\EntityFramework.SqlServer.xml
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\System.Web.Http.Cors.xml
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\Newtonsoft.Json.xml
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\System.Net.Http.Formatting.xml
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\System.Web.Http.xml
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\bin\System.Web.Http.WebHost.xml
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\obj\Debug\MudarService.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\obj\Debug\MudarService.pdb
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\obj\Debug\MudarService.csprojResolveAssemblyReference.cache
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\obj\Debug\MudarService.Migrations.Initial.resources
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\obj\Debug\MudarService.csproj.GenerateResource.Cache
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\obj\Debug\MudarService.Migrations._0926.resources
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\obj\Debug\MudarService.Migrations._09261.resources
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarService\obj\Debug\MudarService.Migrations._09262.resources
+D:\Mudar new code\MudarService\bin\roslyn\csc.exe
+D:\Mudar new code\MudarService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Mudar new code\MudarService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Mudar new code\MudarService\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Mudar new code\MudarService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Mudar new code\MudarService\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Mudar new code\MudarService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Mudar new code\MudarService\bin\roslyn\System.Collections.Immutable.dll
+D:\Mudar new code\MudarService\bin\roslyn\System.Reflection.Metadata.dll
+D:\Mudar new code\MudarService\bin\roslyn\vbc.exe
+D:\Mudar new code\MudarService\bin\roslyn\VBCSCompiler.exe
+D:\Mudar new code\MudarService\bin\roslyn\VBCSCompiler.exe.config
+D:\Mudar new code\MudarService\bin\MudarService.dll.config
+D:\Mudar new code\MudarService\bin\MudarService.dll
+D:\Mudar new code\MudarService\bin\MudarService.pdb
+D:\Mudar new code\MudarService\bin\EntityFramework.dll
+D:\Mudar new code\MudarService\bin\EntityFramework.SqlServer.dll
+D:\Mudar new code\MudarService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Mudar new code\MudarService\bin\Newtonsoft.Json.dll
+D:\Mudar new code\MudarService\bin\System.Net.Http.Formatting.dll
+D:\Mudar new code\MudarService\bin\System.Web.Cors.dll
+D:\Mudar new code\MudarService\bin\System.Web.Http.Cors.dll
+D:\Mudar new code\MudarService\bin\System.Web.Http.dll
+D:\Mudar new code\MudarService\bin\System.Web.Http.WebHost.dll
+D:\Mudar new code\MudarService\bin\EntityFramework.xml
+D:\Mudar new code\MudarService\bin\EntityFramework.SqlServer.xml
+D:\Mudar new code\MudarService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Mudar new code\MudarService\bin\System.Web.Http.Cors.xml
+D:\Mudar new code\MudarService\bin\Newtonsoft.Json.xml
+D:\Mudar new code\MudarService\bin\System.Net.Http.Formatting.xml
+D:\Mudar new code\MudarService\bin\System.Web.Http.xml
+D:\Mudar new code\MudarService\bin\System.Web.Http.WebHost.xml
+D:\Mudar new code\MudarService\obj\Debug\MudarService.csprojResolveAssemblyReference.cache
+D:\Mudar new code\MudarService\obj\Debug\MudarService.Migrations.Initial.resources
+D:\Mudar new code\MudarService\obj\Debug\MudarService.Migrations._0926.resources
+D:\Mudar new code\MudarService\obj\Debug\MudarService.Migrations._09261.resources
+D:\Mudar new code\MudarService\obj\Debug\MudarService.Migrations._09262.resources
+D:\Mudar new code\MudarService\obj\Debug\MudarService.csproj.GenerateResource.Cache
+D:\Mudar new code\MudarService\obj\Debug\MudarService.dll
+D:\Mudar new code\MudarService\obj\Debug\MudarService.pdb
+F:\mudar\Mudar new code\MudarService\bin\roslyn\csc.exe
+F:\mudar\Mudar new code\MudarService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\mudar\Mudar new code\MudarService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\mudar\Mudar new code\MudarService\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\mudar\Mudar new code\MudarService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\mudar\Mudar new code\MudarService\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\mudar\Mudar new code\MudarService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\mudar\Mudar new code\MudarService\bin\roslyn\System.Collections.Immutable.dll
+F:\mudar\Mudar new code\MudarService\bin\roslyn\System.Reflection.Metadata.dll
+F:\mudar\Mudar new code\MudarService\bin\roslyn\vbc.exe
+F:\mudar\Mudar new code\MudarService\bin\roslyn\VBCSCompiler.exe
+F:\mudar\Mudar new code\MudarService\bin\roslyn\VBCSCompiler.exe.config
+F:\mudar\Mudar new code\MudarService\bin\MudarService.dll.config
+F:\mudar\Mudar new code\MudarService\bin\MudarService.dll
+F:\mudar\Mudar new code\MudarService\bin\MudarService.pdb
+F:\mudar\Mudar new code\MudarService\bin\EntityFramework.dll
+F:\mudar\Mudar new code\MudarService\bin\EntityFramework.SqlServer.dll
+F:\mudar\Mudar new code\MudarService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\mudar\Mudar new code\MudarService\bin\Newtonsoft.Json.dll
+F:\mudar\Mudar new code\MudarService\bin\System.Net.Http.Formatting.dll
+F:\mudar\Mudar new code\MudarService\bin\System.Web.Cors.dll
+F:\mudar\Mudar new code\MudarService\bin\System.Web.Http.Cors.dll
+F:\mudar\Mudar new code\MudarService\bin\System.Web.Http.dll
+F:\mudar\Mudar new code\MudarService\bin\System.Web.Http.WebHost.dll
+F:\mudar\Mudar new code\MudarService\bin\EntityFramework.xml
+F:\mudar\Mudar new code\MudarService\bin\EntityFramework.SqlServer.xml
+F:\mudar\Mudar new code\MudarService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\mudar\Mudar new code\MudarService\bin\System.Web.Http.Cors.xml
+F:\mudar\Mudar new code\MudarService\bin\Newtonsoft.Json.xml
+F:\mudar\Mudar new code\MudarService\bin\System.Net.Http.Formatting.xml
+F:\mudar\Mudar new code\MudarService\bin\System.Web.Http.xml
+F:\mudar\Mudar new code\MudarService\bin\System.Web.Http.WebHost.xml
+F:\mudar\Mudar new code\MudarService\obj\Debug\MudarService.csprojResolveAssemblyReference.cache
+F:\mudar\Mudar new code\MudarService\obj\Debug\MudarService.Migrations.Initial.resources
+F:\mudar\Mudar new code\MudarService\obj\Debug\MudarService.Migrations._0926.resources
+F:\mudar\Mudar new code\MudarService\obj\Debug\MudarService.Migrations._09261.resources
+F:\mudar\Mudar new code\MudarService\obj\Debug\MudarService.Migrations._09262.resources
+F:\mudar\Mudar new code\MudarService\obj\Debug\MudarService.csproj.GenerateResource.Cache
+F:\mudar\Mudar new code\MudarService\obj\Debug\MudarService.dll
+F:\mudar\Mudar new code\MudarService\obj\Debug\MudarService.pdb

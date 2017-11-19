@@ -1,0 +1,59 @@
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarWeb\bin\roslyn\csc.exe
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarWeb\bin\roslyn\System.Collections.Immutable.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarWeb\bin\roslyn\System.Reflection.Metadata.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarWeb\bin\roslyn\vbc.exe
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarWeb\bin\roslyn\VBCSCompiler.exe
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarWeb\bin\roslyn\VBCSCompiler.exe.config
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarWeb\bin\MudarWeb.dll.config
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarWeb\bin\MudarWeb.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarWeb\bin\MudarWeb.pdb
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarWeb\obj\Debug\MudarWeb.csprojResolveAssemblyReference.cache
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarWeb\obj\Debug\MudarWeb.dll
+E:\Projects\Rekha\Bhanu\MudarOrganicAngular\MudarWeb\obj\Debug\MudarWeb.pdb
+D:\Mudar new code\MudarWeb\bin\roslyn\csc.exe
+D:\Mudar new code\MudarWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Mudar new code\MudarWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Mudar new code\MudarWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Mudar new code\MudarWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Mudar new code\MudarWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Mudar new code\MudarWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Mudar new code\MudarWeb\bin\roslyn\System.Collections.Immutable.dll
+D:\Mudar new code\MudarWeb\bin\roslyn\System.Reflection.Metadata.dll
+D:\Mudar new code\MudarWeb\bin\roslyn\vbc.exe
+D:\Mudar new code\MudarWeb\bin\roslyn\VBCSCompiler.exe
+D:\Mudar new code\MudarWeb\bin\roslyn\VBCSCompiler.exe.config
+D:\Mudar new code\MudarWeb\bin\MudarWeb.dll.config
+D:\Mudar new code\MudarWeb\bin\MudarWeb.dll
+D:\Mudar new code\MudarWeb\bin\MudarWeb.pdb
+D:\Mudar new code\MudarWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Mudar new code\MudarWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Mudar new code\MudarWeb\obj\Debug\MudarWeb.dll
+D:\Mudar new code\MudarWeb\obj\Debug\MudarWeb.pdb
+F:\mudar\Mudar new code\MudarWeb\bin\roslyn\csc.exe
+F:\mudar\Mudar new code\MudarWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\mudar\Mudar new code\MudarWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\mudar\Mudar new code\MudarWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\mudar\Mudar new code\MudarWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\mudar\Mudar new code\MudarWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\mudar\Mudar new code\MudarWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\mudar\Mudar new code\MudarWeb\bin\roslyn\System.Collections.Immutable.dll
+F:\mudar\Mudar new code\MudarWeb\bin\roslyn\System.Reflection.Metadata.dll
+F:\mudar\Mudar new code\MudarWeb\bin\roslyn\vbc.exe
+F:\mudar\Mudar new code\MudarWeb\bin\roslyn\VBCSCompiler.exe
+F:\mudar\Mudar new code\MudarWeb\bin\roslyn\VBCSCompiler.exe.config
+F:\mudar\Mudar new code\MudarWeb\bin\MudarWeb.dll.config
+F:\mudar\Mudar new code\MudarWeb\bin\MudarWeb.dll
+F:\mudar\Mudar new code\MudarWeb\bin\MudarWeb.pdb
+F:\mudar\Mudar new code\MudarWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\mudar\Mudar new code\MudarWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\mudar\Mudar new code\MudarWeb\obj\Debug\MudarWeb.csprojResolveAssemblyReference.cache
+F:\mudar\Mudar new code\MudarWeb\obj\Debug\MudarWeb.dll
+F:\mudar\Mudar new code\MudarWeb\obj\Debug\MudarWeb.pdb

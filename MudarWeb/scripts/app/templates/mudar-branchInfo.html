@@ -1,0 +1,144 @@
+﻿<div class="portlet light">
+    <div class="portlet-title">
+        <div class="caption font-green">
+            <i class="icon-pin font-green"></i>
+            <span class="caption-subject bold"> Add/Update {{branchInfoCtrl.title}}</span>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <form role="form" name="frmBranchInfo" ng-submit="branchInfoCtrl.onBranchSave(frmBranchInfo.$valid)" novalidate>
+            <div class="col-md-6">
+                <div class="form-body">
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': frmBranchInfo.branchCode.$invalid && frmBranchInfo.branchCode.$touched }">
+                        <input type="text" class="form-control" ng-model="branchInfoCtrl.branch.branchCode" name="branchCode" required />
+                        <label for="form_control_1">
+                            Code
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': frmBranchInfo.branchName.$invalid && frmBranchInfo.branchName.$touched }">
+                        <input type="text" id="branchName" class="form-control" ng-model="branchInfoCtrl.branch.branchName" name="branchName" required />
+                        <label for="branchName">
+                            Name
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': frmBranchInfo.contactPerson.$invalid && frmBranchInfo.contactPerson.$touched }">
+                        <input type="text" class="form-control" ng-model="branchInfoCtrl.branch.contactPerson" name="contactPerson" required />
+                        <label for="form_control_1">
+                            Contact Person
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                    <div class="form-group form-md-line-input">
+                        <input type="text" class="form-control" ng-model="branchInfoCtrl.branch.phoneFax" name="phoneFax">
+                        <label for="form_control_1">Phone / Fax</label>
+                    </div>
+                    <div class="form-group form-md-line-input">
+                        <input type="text" class="form-control" ng-model="branchInfoCtrl.branch.mobile" name="mobile">
+                        <label for="form_control_1">Mobile</label>
+                    </div>
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': frmBranchInfo.contactEmail.$invalid && frmBranchInfo.contactEmail.$touched }">
+                        <input type="email" class="form-control" ng-model="branchInfoCtrl.branch.email" name="contactEmail" required />
+                        <span class="help-block help-block-error" ng-if="frmBranchInfo.contactEmail.$error.email && frmBranchInfo.contactEmail.$invalid && frmBranchInfo.contactEmail.$touched">
+                            Enter valid email address.
+                        </span>
+                        <label for="form_control_1">
+                            Email
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                    <div class="form-group form-md-line-input">
+                        <input type="text" class="form-control" ng-model="branchInfoCtrl.branch.website" name="website">
+                        <label for="form_control_1">Website</label>
+                    </div>
+                    <div class="form-group form-md-line-input">
+                        <input type="text" class="form-control" ng-model="branchInfoCtrl.branch.bankName" name="bankName">
+                        <label for="form_control_1">Bank Name</label>
+                    </div>
+                    <div class="form-group form-md-line-input">
+                        <input type="text" class="form-control" ng-model="branchInfoCtrl.branch.bankAccountNumber" name="bankAccountNumber">
+                        <label for="form_control_1">Bank Account Number</label>
+                    </div>
+                    <div class="form-group form-md-line-input">
+                        <input type="text" class="form-control" ng-model="branchInfoCtrl.branch.bankADCCode" name="bankADCCode">
+                        <label for="form_control_1">Bank ADC Code</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-body">
+                    <div class=" form-group form-md-line-input ">
+                        <input type="text" class="form-control" ng-model="branchInfoCtrl.branch.iECode" name="iECode">
+                        <label for="form_control_1 ">IECode</label>
+                    </div>
+                    <div class="form-group form-md-line-input ">
+                        <input type="text" class="form-control" ng-model="branchInfoCtrl.branch.fDA" name="fDA">
+                        <label for="form_control_1 ">FDA</label>
+                    </div>
+                    <div class="form-group form-md-line-input ">
+                        <input type="text" class="form-control" ng-model="branchInfoCtrl.branch.aPVAT" name="aPVAT">
+                        <label for="form_control_1 ">AP VAT</label>
+                    </div>
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': frmBranchInfo.address.$invalid && frmBranchInfo.address.$touched }">
+                        <textarea class="form-control" ng-model="branchInfoCtrl.branch.address" name="address" required></textarea>
+                        <label for="form_control_1 ">
+                            Address
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': frmBranchInfo.city.$invalid && frmBranchInfo.city.$touched }">
+                        <input type="text" class="form-control" ng-model="branchInfoCtrl.branch.city" name="city" required />
+                        <label for="form_control_1 ">
+                            City
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': frmBranchInfo.district.$invalid && frmBranchInfo.district.$touched }">
+                        <input type="text" class="form-control" ng-model="branchInfoCtrl.branch.district" name="district" required />
+                        <label for="form_control_1 ">
+                            District.
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                    <div class="form-group form-md-line-input ">
+                        <input type="text" class="form-control" ng-model="branchInfoCtrl.branch.taluk" name="taluk">
+                        <label for="form_control_1 ">Taluk</label>
+                    </div>
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': frmBranchInfo.state.$invalid && frmBranchInfo.state.$touched }">
+                        <input type="text" class="form-control" ng-model="branchInfoCtrl.branch.state" name="state" required />
+                        <label for="form_control_1 ">
+                            State
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': frmBranchInfo.country.$invalid && frmBranchInfo.country.$touched }">
+                        <input type="text" class="form-control" ng-model="branchInfoCtrl.branch.country" name="country" required />
+                        <label for="form_control_1 ">
+                            Country
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                    <div class="form-group form-md-line-input ">
+                        <input type="text" class="form-control" ng-model="branchInfoCtrl.branch.tin" name="tin">
+                        <label for="form_control_1 ">TIN Number</label>
+                    </div>
+                    <div class="form-group form-md-line-input ">
+                        <input type="text" class="form-control" ng-model="branchInfoCtrl.branch.organicPremium" name="organicPremium">
+                        <label for="form_control_1 ">Organic Premium</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-actions noborder" style="text-align:center">
+                <button type="submit" class="btn blue" ng-disabled="frmBranchInfo.$invalid">
+                    <i class="fa fa-check"></i>
+                    Submit
+                </button>
+                <button type="button" class="btn default" ng-click="branchInfoCtrl.gotoBranches()">
+                    <i class="fa fa-times"></i>Cancel
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

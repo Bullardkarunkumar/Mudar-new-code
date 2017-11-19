@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<!--
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.7
+Version: 4.7.5
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Dribbble: www.dribbble.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+Renew Support: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" ng-app="mudarApp">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+
+<head>
+
+    <title>Murdar Organic</title>
+    <base href="/">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Preview page of Metronic Admin Theme #2 for statistics, charts, recent events and reports" name="description" />
+    <meta content="" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    <link href="/assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="/assets/global/css/angular-block-ui.min.css" rel="stylesheet" />
+    <link href="/assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <!--<link href="/assets/global/plugins/icheck/skins/all.css" rel="stylesheet" type="text/css" />-->
+    <!-- END THEME GLOBAL STYLES -->
+    <!-- BEGIN THEME LAYOUT STYLES -->
+    <link href="/assets/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/layout/css/themes/blue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="/assets/layout/css/custom.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/layout/login-5.css" rel="stylesheet" />
+    <!-- END THEME LAYOUT STYLES -->
+    <link rel="shortcut icon" href="favicon.ico" />
+
+
+    <style>
+        .centerLoading {
+            right: 50%;
+            bottom: 50%;
+            transform: translate(50%, 50%);
+            position: absolute;
+        }
+
+        .loadingHidden {
+            display: none !important;
+            visibility: hidden !important;
+        }
+    </style>
+</head>
+<!-- END HEAD -->
+
+<body ng-class="{'page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid': IsLoggedIn}" ng-controller="mudarRootCtrl">
+    <!-- BEGIN HEADER -->
+    <mudar-header ng-if="IsLoggedIn"></mudar-header>
+    <!-- END HEADER -->
+    <!-- BEGIN HEADER & CONTENT DIVIDER -->
+    <div class="clearfix"> </div>
+    <!-- END HEADER & CONTENT DIVIDER -->
+    <!-- BEGIN CONTAINER -->
+    <div ng-class="{'page-container':IsLoggedIn}">
+        <mudar-navigation ng-if="IsLoggedIn" role="userRole"></mudar-navigation>
+        <!-- BEGIN CONTENT -->
+        <div ng-class="{'page-content-wrapper': IsLoggedIn}">
+            <!-- BEGIN CONTENT BODY -->
+            <div class="page-content" block-ui ui-view>
+                Loading...
+            </div>
+            <!-- END CONTENT BODY -->
+        </div>
+        <!-- END CONTENT -->
+    </div>
+    <!-- END CONTAINER -->
+    <!-- BEGIN CORE PLUGINS -->
+    <script src="/scripts/plugins/jquery.min.js"></script>
+    <script src="/scripts/plugins/bootstrap.min.js"></script>
+
+    <script src="/scripts/plugins/js.cookie.min.js"></script>
+    <script src="/scripts/plugins/jquery.slimscroll.min.js"></script>
+    <script src="/scripts/plugins/jquery.blockui.min.js"></script>
+    <script src="/scripts/plugins/bootstrap-switch.min.js"></script>
+    <!-- END CORE PLUGINS -->
+
+    <script src="/scripts/plugins/moment.min.js"></script>
+    <script src="/scripts/plugins/morris.min.js"></script>
+    <script src="/scripts/plugins/raphael-min.js"></script>
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <script src="/scripts/plugins/datatable.js"></script>
+    <script src="/scripts/plugins/datatables.min.js"></script>
+    <script src="/scripts/plugins/datatables.bootstrap.js"></script>
+    <script src="/scripts/plugins/app.min.js" type="text/javascript"></script>
+    <!-- END PAGE LEVEL PLUGINS -->
+    <script src="/scripts/angular/angular.min.js"></script>
+    <script src="/scripts/angular/angular-ui-router.min.js"></script>
+    <script src="/scripts/angular/angular-block-ui.min.js"></script>
+    <script src="/scripts/angular/angular-cookies.min.js"></script>
+    <script src="/scripts/angular/angular-local-storage.min.js"></script>
+    <script src="/scripts/app/mudarApp.js"></script>
+    <script src="/scripts/app/services/mudar-usercontext-service.js"></script>
+    <script src="/scripts/app/services/mudar-Identity.service.js"></script>
+    <script src="/scripts/app/services/mudar-branch-service.js"></script>
+    <script src="/scripts/app/services/mudar-category-product-service.js"></script>
+    <script src="/scripts/app/services/mudar-pricelist-service.js"></script>
+    <script src="/scripts/app/directives/mudarHeader.js"></script>
+    <script src="/scripts/app/directives/mudarNavigation.js"></script>
+    <script src="/scripts/app/controllers/dashboardController.js"></script>
+    <script src="/scripts/app/controllers/branchesController.js"></script>
+    <script src="/scripts/app/controllers/branchInfoController.js"></script>
+    <script src="/scripts/app/controllers/usersController.js"></script>
+    <script src="/scripts/app/controllers/userInfoController.js"></script>
+    <script src="/scripts/app/controllers/loginController.js"></script>
+    <script src="/scripts/app/controllers/categoriesController.js"></script>
+    <script src="/scripts/app/controllers/categoryInfoController.js"></script>
+    <script src="/scripts/app/controllers/productsController.js"></script>
+    <script src="/scripts/app/controllers/productInfoController.js"></script>
+    <script src="/scripts/app/controllers/priceListcontroller.js"></script>
+    <script src="/scripts/app/controllers/buyerController.js"></script>
+</body>
+
+</html>

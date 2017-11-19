@@ -1,0 +1,45 @@
+﻿
+<div class="portlet light">
+    <div class="portlet-title">
+        <div class="caption font-green" style="text-align:center">
+            <span class="caption-subject bold"> Company Details</span>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <form role="form" name="frmUserInfo" novalidate>
+            <div class="form-body">
+                <div class="form-group form-md-line-input">
+                    <input type="text" class="form-control" required />
+                    <label for="form_control_1">
+                        Company Name
+                        <span class="required" aria-required="true">*</span>
+                    </label>
+                </div>
+                <div class="form-group form-md-line-input">
+                    <input type="text" id="txtAddrLn1" class="form-control">
+                    <label for="txtAddrLn1">Address Line 1</label>
+                </div>
+                <div class="form-group form-md-line-input">
+                    <input type="text" id="txtAddrLn2" class="form-control">
+                    <label for="txtAddrLn2">Address Line 2</label>
+                </div>
+                <div class="form-group form-md-line-input">
+                    <input type="text" id="txtCity" class="form-control">
+                    <label for="txtCity">City</label>
+                </div>
+                <div class="form-group form-md-line-input">
+                    <input type="text" id="txtState" class="form-control">
+                    <label for="txtState">Province/State</label>
+                </div>
+                <div class="form-group form-md-line-input">
+                    <input type="text" id="txtzipcode" class="form-control">
+                    <label for="txtzipcode">Zip Code</label>
+                </div>
+                <a href="javascript:;" class="btn green button-submit pull-right" ng-click="buyerStep1Ctrl.nextStep()">
+                    Next
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+        </form>
+    </div>
+</div>

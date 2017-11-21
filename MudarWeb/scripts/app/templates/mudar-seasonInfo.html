@@ -1,0 +1,57 @@
+﻿<div class="portlet light">
+    <div class="portlet-title">
+        <div class="caption font-green">
+            <i class="icon-pin font-green"></i>
+            <span class="caption-subject bold"> Add/Update Season</span>
+        </div>
+    </div>
+    <div class="portlet-body form">
+        <form role="form" name="frmSeasonInfo" ng-submit="seasonInfoCtrl.onSeasonSave(frmSeasonInfo.$valid)" novalidate>
+            <div class="row">                
+                <div class="form-body">
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': frmSeasonInfo.seasonName.$invalid && frmSeasonInfo.seasonName.$touched }">
+                        <input type="text" class="form-control" ng-model="seasonInfoCtrl.seasonInfo.seasonName" name="seasonName" required />
+                        <label for="form_control_1">
+                            Season Name
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': frmSeasonInfo.seasonYear.$invalid && frmSeasonInfo.seasonName.$touched }">
+                        <select ng-model="seasonInfoCtrl.seasonInfo.seasonYear" class="form-control" name="year" required>
+                            <option value="">Select Year</option>
+                            <option ng-repeat="year in seasonInfoCtrl.years" value="{{year}}">{{year}}</option>
+                        </select>
+                        <label for="form_control_1">
+                            Season Year
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': frmSeasonInfo.startDate.$invalid && frmSeasonInfo.startDate.$touched }">
+                        <input type="date" class="form-control" ng-model="seasonInfoCtrl.seasonInfo.startDate" name="startDate" required />
+                        <label for="form_control_1">
+                            Start Date
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                    <div class="form-group form-md-line-input" ng-class="{'has-error': frmSeasonInfo.endDate.$invalid && frmSeasonInfo.endDate.$touched }">
+                        <input type="date" class="form-control" ng-model="seasonInfoCtrl.seasonInfo.endDate" name="endDate" required />
+                        <label for="form_control_1">
+                            End Date
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-actions noborder row" style="text-align:center">
+                <button type="submit" class="btn blue" ng-disabled="frmSeasonInfo.$invalid">
+                    <i class="fa fa-check"></i>
+                    Submit
+                </button>
+                <button type="button" class="btn default" ng-click="seasonInfoCtrl.gotoSeasons()">
+                    <i class="fa fa-times"></i>Cancel
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -108,6 +108,7 @@
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\MudarIdentityController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Controllers\SeasonsController.cs" />
     <Compile Include="Filters\MudarBasicAuthentication.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -138,6 +139,7 @@
     <Compile Include="Models\MudarDBContext.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\Season.cs" />
     <Compile Include="Models\SupplierDetail.cs" />
     <Compile Include="Models\UserLogin.cs" />
     <Compile Include="Models\UsersInRole.cs" />

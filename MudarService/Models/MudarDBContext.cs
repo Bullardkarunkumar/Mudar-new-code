@@ -24,6 +24,7 @@ namespace MudarDB.Models
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<BuyerProductDetails> BuyerProducts { get; set; }
+        public DbSet<Season> Seasons { get; set; }
     }
 
     //public class MudarDBInitializer : DropCreateDatabaseIfModelChanges<MudarDBContext>

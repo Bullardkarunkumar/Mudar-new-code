@@ -768,6 +768,8 @@
     <Content Include="scripts\app\controllers\priceListcontroller.js" />
     <Content Include="scripts\app\controllers\productInfoController.js" />
     <Content Include="scripts\app\controllers\productsController.js" />
+    <Content Include="scripts\app\controllers\seasonInfoController.js" />
+    <Content Include="scripts\app\controllers\seasonsController.js" />
     <Content Include="scripts\app\controllers\userInfoController.js" />
     <Content Include="scripts\app\controllers\usersController.js" />
     <Content Include="scripts\app\directives\mudarHeader-template.html" />
@@ -778,6 +780,7 @@
     <Content Include="scripts\app\services\mudar-branch-service.js" />
     <Content Include="scripts\app\services\mudar-category-product-service.js" />
     <Content Include="scripts\app\services\mudar-pricelist-service.js" />
+    <Content Include="scripts\app\services\mudar-season-service.js" />
     <Content Include="scripts\app\services\mudar-usercontext-service.js" />
     <Content Include="scripts\app\templates\buyer\mudar-buyer-list.html" />
     <Content Include="scripts\app\templates\buyer\mudar-buyer-step1.html" />
@@ -799,6 +802,8 @@
     <Content Include="scripts\app\templates\mudar-pricelist.html" />
     <Content Include="scripts\app\templates\mudar-productInfo.html" />
     <Content Include="scripts\app\templates\mudar-products.html" />
+    <Content Include="scripts\app\templates\mudar-seasonInfo.html" />
+    <Content Include="scripts\app\templates\mudar-seasons.html" />
     <Content Include="scripts\app\templates\mudar-userInfo.html" />
     <Content Include="scripts\app\templates\mudar-users.html" />
     <Content Include="scripts\layout\demo.min.js" />

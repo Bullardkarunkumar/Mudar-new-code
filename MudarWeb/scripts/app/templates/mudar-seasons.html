@@ -1,0 +1,41 @@
+﻿<div class="portlet box green">
+    <div class="portlet-title">
+        <div class="caption">
+            <i class="fa fa-cogs"></i>Season List
+        </div>
+        <a href="javascript:;" id="btnNew" class="btn btn-success pull-right"
+           ng-click="seasonCtrl.onseasonEdit(null)">
+            <i class="fa fa-plus"></i> New
+        </a>
+    </div>
+    <div class="portlet-body flip-scroll">
+        <table class="table table-bordered table-striped table-condensed flip-content">
+            <thead class="flip-content">
+                <tr>
+                    <th> Season Name </th>
+                    <th> Start date </th>
+                    <th> End Date </th>
+                    <th> </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-if="seasonCtrl.seasons.length==0">
+                    <td colspan="5" align="center"> No Seasons found</td>
+                </tr>
+                <tr ng-repeat="season in seasonCtrl.seasons">
+                    <td> {{season.seasonName}}</td>
+                    <td>{{season.startDate}}</td>
+                    <td>{{season.endDate}}</td>
+                    <td>
+                        <a href="javascript:;" class="btn btn-small btn-sm green" ng-click="seasonCtrl.onSeasonEdit(season.seasonId)">
+                            <i class="fa fa-edit"></i> Edit
+                        </a>
+                        <a href="javascript:;" class="btn btn-small btn-sm red" ng-click="seasonCtrl.onSeasonDelete(season.seasonId)">
+                            <i class="fa fa-trash-o"></i> Delete
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

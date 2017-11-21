@@ -56,6 +56,16 @@ mudarApp.config(function ($stateProvider, $urlRouterProvider, $locationProvider,
                 })
             }
         }
+        }).state('seasons', {
+            url: '/seasons',
+            controller: 'seasonsController',
+            controllerAs: 'seasonCtrl',
+            templateUrl: '/scripts/app/templates/mudar-seasons.html'
+        }).state('seasonDetails', {
+        url: '/seasons/:id?',
+        controller: 'seasonInfoController',
+        controllerAs: 'seasonInfoCtrl',
+        templateUrl: '/scripts/app/templates/mudar-seasonInfo.html'
     }).state('categories', {
         url: '/categories',
         controller: 'categoriesController',

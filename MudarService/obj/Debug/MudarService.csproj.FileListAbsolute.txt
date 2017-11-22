@@ -146,11 +146,6 @@ F:\mudar\Mudar new code\MudarService\bin\System.Net.Http.Formatting.xml
 F:\mudar\Mudar new code\MudarService\bin\System.Web.Http.xml
 F:\mudar\Mudar new code\MudarService\bin\System.Web.Http.WebHost.xml
 F:\mudar\Mudar new code\MudarService\obj\Debug\MudarService.csprojResolveAssemblyReference.cache
-F:\mudar\Mudar new code\MudarService\obj\Debug\MudarService.Migrations.Initial.resources
-F:\mudar\Mudar new code\MudarService\obj\Debug\MudarService.Migrations._0926.resources
-F:\mudar\Mudar new code\MudarService\obj\Debug\MudarService.Migrations._09261.resources
-F:\mudar\Mudar new code\MudarService\obj\Debug\MudarService.Migrations._09262.resources
-F:\mudar\Mudar new code\MudarService\obj\Debug\MudarService.csproj.GenerateResource.Cache
 F:\mudar\Mudar new code\MudarService\obj\Debug\MudarService.dll
 F:\mudar\Mudar new code\MudarService\obj\Debug\MudarService.pdb
 G:\Mudar\MudarService\bin\roslyn\csc.exe

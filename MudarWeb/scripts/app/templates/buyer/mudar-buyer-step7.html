@@ -6,15 +6,54 @@
         </div>
     </div>
     <div class="portlet-body form">
-        <div class="portlet-body flip-scroll" style="text-align:center">
-            <a href="javascript:;" class="btn green button-submit pull-left" ng-click="buyerStep7Ctrl.previousStep()">
-                <i class="fa fa-arrow-left"></i> Back
-            </a>
-            <a href="javascript:;" class="btn green button-submit pull-right" ng-click="buyerStep7Ctrl.nextStep()">
-                Next
-                <i class="fa fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
+        <div class="form-group form-md-radios">
+            <div style="text-align: center;">
+                <div class="md-radio">                    
+                    <label for="rbtnBank">
+                        <span class="inc"></span>
+                        <span class="check"></span>
+                        <span class="box"></span> FOB India
+                    </label>
+                    <input type="radio" id="rbtnPriceterms" value="1" ng-model="buyerInfo.priceTerm" rConsignee
+                           name="priceTerms" class="md-radiobtn" />
+                </div>
+                <div class="md-radio">
+                        <label for="rbtnConsignee">
+                        <span class="inc"></span>
+                        <span class="check"></span>
+                        <span class="box"></span> CIF  by Sea
+                    </label>
+                    <input type="radio" id="rbtnPriceterms" value="1" ng-model="buyerInfo.priceTerm" rConsignee
+                           name="priceTerms" class="md-radiobtn" />
+                </div>
+                <div class="md-radio">                   
+                    <label for="rbtnConsignee">
+                        <span class="inc"></span>
+                        <span class="check"></span>
+                        <span class="box"></span> CIF By AIR
 
-</div>
+                    </label>
+                        <input type="radio" id="rbtnPriceterms" value="1" ng-model="buyerInfo.priceTerm" rConsignee
+                               name="priceTerms" class="md-radiobtn" />
+                </div>
+                <div class="md-radio">
+                    <label for="rbtnConsignee">
+                        <span class="inc"></span>
+                        <span class="check"></span>
+                        <span class="box"></span> FOR Destination
+                    </label>
+                    <input type="radio" id="rbtnPriceterms" value="1" ng-model="buyerInfo.priceTerm" rConsignee
+                           name="priceTerms" class="md-radiobtn" />
+                </div>
+                </div>
+                <a href="javascript:;" class="btn green button-submit pull-left" ng-click="buyerStep7Ctrl.previousStep()">
+                    <i class="fa fa-arrow-left"></i> Back
+                </a>
+                <a href="javascript:;" class="btn green button-submit pull-right" ng-click="buyerStep7Ctrl.nextStep()">
+                    Next
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>

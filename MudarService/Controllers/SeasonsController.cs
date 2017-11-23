@@ -10,6 +10,7 @@ using System.Web.Http.Description;
 
 namespace MudarService.Controllers
 {
+    [RoutePrefix("api")]
     public class SeasonsController : ApiController
     {
         private MudarDBContext db = new MudarDBContext();

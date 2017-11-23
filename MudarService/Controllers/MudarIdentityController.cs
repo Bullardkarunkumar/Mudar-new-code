@@ -11,6 +11,7 @@ using MudarService.Common;
 
 namespace MudarService.Controllers
 {
+    [RoutePrefix("api")]
     public class MudarIdentityController : ApiController
     {
         [Route("users")]

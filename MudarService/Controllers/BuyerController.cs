@@ -17,7 +17,7 @@ using System.Data.SqlClient;
 
 namespace MudarService.Controllers
 {
-    [RoutePrefix("api/")]
+    [RoutePrefix("api")]
     public class BuyerController : ApiController
     {
         private MudarDBContext db = new MudarDBContext();

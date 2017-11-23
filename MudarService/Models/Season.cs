@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MudarService.Models
 {
-    [Table("tblSeasonDetails")]
+    [Table("tblSeason")]
     public class Season : MudarBaseEntity
     {
             [Key]

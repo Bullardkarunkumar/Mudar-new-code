@@ -17,7 +17,6 @@ using System.Data.SqlClient;
 
 namespace MudarService.Controllers
 {
-    [RoutePrefix("api/")]
     public class BuyerController : ApiController
     {
         private MudarDBContext db = new MudarDBContext();
@@ -211,9 +210,9 @@ namespace MudarService.Controllers
 
                 return Ok();
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return BadRequest();
+                return InternalServerError(e);
             }
 
         }

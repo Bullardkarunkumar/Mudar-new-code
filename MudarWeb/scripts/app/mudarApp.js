@@ -175,7 +175,7 @@ mudarApp.config(function ($stateProvider, $urlRouterProvider, $locationProvider,
 });
 
 mudarApp.constant('appSettings', {
-    apiServiceBaseUri: 'http://localhost:49452/'
+    apiServiceBaseUri: 'http://localhost:49452/api/'
 });
 
 mudarApp.controller('mudarRootCtrl', function ($scope, $rootScope, blockUI, userContextService, $window, $state) {

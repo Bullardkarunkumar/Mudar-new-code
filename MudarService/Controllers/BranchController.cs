@@ -10,6 +10,7 @@ using System.Web.Http;
 
 namespace MudarService.Controllers
 {
+    [RoutePrefix("api")]
     public class BranchController : ApiController
     {
         [Route("branchesandics")]

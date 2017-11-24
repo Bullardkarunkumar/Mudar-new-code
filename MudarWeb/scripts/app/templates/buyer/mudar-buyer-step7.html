@@ -6,15 +6,94 @@
         </div>
     </div>
     <div class="portlet-body form">
-        <div class="portlet-body flip-scroll" style="text-align:center">
-            <a href="javascript:;" class="btn green button-submit pull-left" ng-click="buyerStep7Ctrl.previousStep()">
-                <i class="fa fa-arrow-left"></i> Back
-            </a>
-            <a href="javascript:;" class="btn green button-submit pull-right" ng-click="buyerStep7Ctrl.nextStep()">
-                Next
-                <i class="fa fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
+        <form role="form" name="frmPriceInfo" novalidate>
+            <div class="form-body">
+                <div class="form-group form-md-radios">
+                    <div class="md-radio-list" style="text-align: center;">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="pull-right">
+                                    FOB India
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="md-radio">
+                                        <input type="radio" id="rbtnFob" value="1" ng-model="buyerInfo.priceTerm"
+                                               name="priceTerms" class="md-radiobtn" />
+                                        <label for="rbtnFob">
+                                            <span class="inc"></span>
+                                            <span class="check"></span>
+                                            <span class="box"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="pull-right">
+                                        CIF  by Sea
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="md-radio">
+                                        <input type="radio" id="rbtnSea" value="2" ng-model="buyerInfo.priceTerm"
+                                               name="priceTerms" class="md-radiobtn" />
+                                        <label for="rbtnSea">
+                                            <span class="inc"></span>
+                                            <span class="check"></span>
+                                            <span class="box"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="pull-right">
+                                        CIF By AIR
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="md-radio">
 
-</div>
+                                        <input type="radio" id="rbtnAir" value="3" ng-model="buyerInfo.priceTerm"
+                                               name="priceTerms" class="md-radiobtn" />
+                                        <label for="rbtnAir">
+                                            <span class="inc"></span>
+                                            <span class="check"></span>
+                                            <span class="box"></span>
+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="pull-right">
+                                        FOR Destination
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="md-radio">
+                                        <input type="radio" id="rbtnDest" value="4" ng-model="buyerInfo.priceTerm"
+                                               name="priceTerms" class="md-radiobtn" />
+                                        <label for="rbtnDest">
+                                            <span class="inc"></span>
+                                            <span class="check"></span>
+                                            <span class="box"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <a href="javascript:;" class="btn green button-submit pull-left" ng-click="buyerStep7Ctrl.previousStep()">
+                    <i class="fa fa-arrow-left"></i> Back
+                </a>
+                <a href="javascript:;" class="btn green button-submit pull-right" ng-click="buyerStep7Ctrl.nextStep()">
+                    Next
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+                </div>
+</form>
+</div>                  
+            </div>

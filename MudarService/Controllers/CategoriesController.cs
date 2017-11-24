@@ -13,6 +13,7 @@ using MudarService.Models;
 
 namespace MudarService.Controllers
 {
+    [RoutePrefix("api")]
     public class CategoriesController : ApiController
     {
         private MudarDBContext db = new MudarDBContext();

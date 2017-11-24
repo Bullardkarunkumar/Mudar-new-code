@@ -56,12 +56,12 @@ mudarApp.config(function ($stateProvider, $urlRouterProvider, $locationProvider,
                 })
             }
         }
-        }).state('seasons', {
-            url: '/seasons',
-            controller: 'seasonsController',
-            controllerAs: 'seasonCtrl',
-            templateUrl: '/scripts/app/templates/mudar-seasons.html'
-        }).state('seasonDetails', {
+    }).state('seasons', {
+        url: '/seasons',
+        controller: 'seasonsController',
+        controllerAs: 'seasonCtrl',
+        templateUrl: '/scripts/app/templates/mudar-seasons.html'
+    }).state('seasonDetails', {
         url: '/seasons/:id?',
         controller: 'seasonInfoController',
         controllerAs: 'seasonInfoCtrl',
@@ -118,7 +118,7 @@ mudarApp.config(function ($stateProvider, $urlRouterProvider, $locationProvider,
             }
         }
     }).state('buyer', {
-        abstract:true,
+        abstract: true,
         url: '/buyer',
         controller: 'buyerController',
         controllerAs: 'buyerCtrl',
@@ -168,6 +168,11 @@ mudarApp.config(function ($stateProvider, $urlRouterProvider, $locationProvider,
         controller: 'buyerStep8Controller',
         controllerAs: 'buyerStep8Ctrl',
         templateUrl: '/scripts/app/templates/buyer/mudar-buyer-step8.html'
+    }).state('farmerInfo', {
+        url: '/farmerInfo',
+        controller: 'farmerInfoController',
+        controllerAs: 'farmerInfoCtrl',
+        templateUrl: '/scripts/app/templates/farmer/mudar-farmerInfo.html'
     });
     //$locationProvider.html5Mode(true);
 
@@ -175,7 +180,7 @@ mudarApp.config(function ($stateProvider, $urlRouterProvider, $locationProvider,
 });
 
 mudarApp.constant('appSettings', {
-    apiServiceBaseUri: 'http://localhost:49452/'
+    apiServiceBaseUri: 'http://localhost:49452/api/'
 });
 
 mudarApp.controller('mudarRootCtrl', function ($scope, $rootScope, blockUI, userContextService, $window, $state) {

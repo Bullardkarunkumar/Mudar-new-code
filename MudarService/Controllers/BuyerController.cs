@@ -211,9 +211,9 @@ namespace MudarService.Controllers
 
                 return Ok();
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return BadRequest();
+                return InternalServerError(e);
             }
 
         }

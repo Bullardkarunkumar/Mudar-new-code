@@ -40,7 +40,41 @@
                             <span class="required" aria-required="true">*</span>
                         </label>
                     </div>
-                </div>
+                    <label for="form_control_1">
+                        Select Products
+                    </label>
+                    <div class="portlet-body flip-scroll" style="text-align:center">
+                        <table class="table table-bordered table-striped table-condensed flip-content">
+                            <thead class="flip-content">
+                                <tr>
+                                    <th style="text-align:center">Sno</th>
+                                    <th style="text-align:center"> Product Name </th>
+                                    <th> </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-if="seasonInfoCtrl.products.length==0">
+                                    <td colspan="5" align="center"> No Products found</td>
+                                </tr>
+                                <tr ng-repeat="product in seasonInfoCtrl.products">
+                                    <td>{{$index + 1}}</td>
+                                    <td> {{product.productName}}</td>
+                                    <td>
+                                        <div class="md-checkbox has-success" style="display:inline-block">
+                                            <input type="checkbox" {{product.isBuyerProduct ? "checked":""}} ng-model="product.isBuyerProduct" id="{{'checkbox' + $index}}" class="md-check">
+                                            <label for="{{'checkbox' + $index}}">
+                                                <span class="inc"></span>
+                                                <span class="check"></span>
+                                                <span class="box"></span>
+                                            </label>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
             </div>
 
             <div class="form-actions noborder row" style="text-align:center">

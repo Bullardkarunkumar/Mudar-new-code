@@ -182,7 +182,11 @@
     }
 }).controller('buyerStep7Controller', function ($scope, $state, $stateParams) {
     $scope.setProgressWith(7);
-
+    var vm = this;
+    vm.priceTerm = "FOB India";
+    $scope.OnPriceTermSelected = function (value) {
+        vm.priceTerm = value;
+    }
     this.nextStep = function () {
         $scope.addUpdateBuyer();
         $state.go('buyer.step8');

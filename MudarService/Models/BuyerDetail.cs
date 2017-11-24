@@ -25,23 +25,21 @@ namespace MudarService.Models
         public string VAT { get; set; }
         public string CST { get; set; }
         public string GST { get; set; }
-
         // Step 1 End
 
+        //Step 2 Begin
         public string Phone { get; set; }
         public string Mphone { get; set; }
-
-        //Step 2 Begin
         public string CContactPerson { get; set; }
         public string CContactPhoneNo { get; set; }
         public string MobileforTextingpurpose { get; set; }
         public string Email { get; set; }
         public string Website { get; set; }
-
         //Step 2 End
 
-        //Step 3 
+        //Step 3 Begin
         public ICollection<Product> Products { get; set; }
+        //Step 3 End
 
         //Step 4 Begin
         public string NotifyName { get; set; }
@@ -53,11 +51,9 @@ namespace MudarService.Models
         public string NContactPhoneNo { get; set; }
         public string NPincode { get; set; }
         public string NCountry { get; set; }
-
         //Step 4 End
 
         //Step 5 Begin
-
         public int? BankOrConsignee { get; set; }
         public string BankName { get; set; }
         public string BankAddressLine1 { get; set; }
@@ -66,14 +62,12 @@ namespace MudarService.Models
         public string BankState { get; set; }
         public string BankPincode { get; set; }
         public string BankCountry { get; set; }
-
-        //public string BankContactPerson { get; set; }
-        //public string BankContactPhoneNo { get; set; }
-
         //Step 5 End
 
         //Step 6 Begin
-
+        [ForeignKey("BuyerPriceTermsDetails")]
+        public int BuyerPriceID { get; set; }
+        public BuyerPriceTermsDetails BuyerPriceTermsDetails { get;set;}
         //Step 6 End
 
         public string BuyerCode { get; set; }

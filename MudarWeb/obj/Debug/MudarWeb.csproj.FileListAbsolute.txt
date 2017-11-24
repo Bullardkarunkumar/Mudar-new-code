@@ -56,3 +56,4 @@ F:\mudar\Mudar new code\MudarWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerP
 F:\mudar\Mudar new code\MudarWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 F:\mudar\Mudar new code\MudarWeb\obj\Debug\MudarWeb.dll
 F:\mudar\Mudar new code\MudarWeb\obj\Debug\MudarWeb.pdb
+F:\mudar\Mudar new code\MudarWeb\obj\Debug\MudarWeb.csprojResolveAssemblyReference.cache

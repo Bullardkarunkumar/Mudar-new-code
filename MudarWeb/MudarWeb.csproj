@@ -764,6 +764,7 @@
     <Content Include="scripts\app\controllers\categoriesController.js" />
     <Content Include="scripts\app\controllers\categoryInfoController.js" />
     <Content Include="scripts\app\controllers\dashboardController.js" />
+    <Content Include="scripts\app\controllers\ICS_Controllers\farmerInfoController.js" />
     <Content Include="scripts\app\controllers\loginController.js" />
     <Content Include="scripts\app\controllers\priceListcontroller.js" />
     <Content Include="scripts\app\controllers\productInfoController.js" />
@@ -777,6 +778,7 @@
     <Content Include="scripts\app\directives\mudarNavigation-template.html" />
     <Content Include="scripts\app\directives\mudarNavigation.js" />
     <Content Include="scripts\app\mudarApp.js" />
+    <Content Include="scripts\app\services\ICS_Services\mudar-farmerInfo-service.js" />
     <Content Include="scripts\app\services\mudar-branch-service.js" />
     <Content Include="scripts\app\services\mudar-category-product-service.js" />
     <Content Include="scripts\app\services\mudar-pricelist-service.js" />
@@ -790,6 +792,7 @@
     <Content Include="scripts\app\templates\buyer\mudar-buyer-step6.html" />
     <Content Include="scripts\app\templates\buyer\mudar-buyer-step7.html" />
     <Content Include="scripts\app\templates\buyer\mudar-buyer-step8.html" />
+    <Content Include="scripts\app\templates\farmer\mudar-farmerInfo.html" />
     <Content Include="scripts\app\templates\mudar-app.html" />
     <Content Include="scripts\app\templates\buyer\mudar-buyer-step2.html" />
     <Content Include="scripts\app\templates\buyer\mudar-buyer.html" />

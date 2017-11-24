@@ -8,7 +8,7 @@
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>True</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
-    <ProjectView>ProjectFiles</ProjectView>
+    <ProjectView>ShowAllFiles</ProjectView>
     <NameOfLastUsedPublishProfile>MudarService</NameOfLastUsedPublishProfile>
     <WebStackScaffolding_DbContextTypeFullName>MudarDB.Models.MudarDBContext</WebStackScaffolding_DbContextTypeFullName>
   </PropertyGroup>

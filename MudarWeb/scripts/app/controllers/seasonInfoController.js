@@ -1,24 +1,43 @@
 ﻿mudarApp.controller('seasonInfoController', function ($state, $stateParams, seasonService, categoryProductService) {
-    var self = this;
     this.seasonId = $stateParams.id;
     this.seasonInfo = {};
     var currentDate = new Date();
+    var self = this;
+
     this.years = [currentDate.getFullYear(), currentDate.getFullYear() - 1, currentDate.getFullYear() - 2]
-    this.fnInit = function () {
-        seasonService.getSeason(this.seasonId).then(function (response) {
-            self.seasonInfo = response[0];
-        }, function (err, status) {
+    this.fnInit = function () {      
+            categoryProductService.getProducts().then(function (successResponse) {
+                self.products = successResponse;
+                if (self.seasonId) {
+                    seasonService.getSeason(self.seasonId).then(function (response) {
+                        console.log(response);
+                        self.seasonInfo = response;
+                        self.products.forEach(function (product) {
+                            self.seasonInfo.products.forEach(function (seasonProduct) {
+                                if (seasonProduct.productId === product.productId) {
+                                    product.isSeasonProduct = true;
+                                }
+                            });
+                        });
+                    }, function (err, status) {
+                    });
+                }
+            }, function (errorResponse) {
+
             });
-
-        categoryProductService.getProducts().then(function (successResponse) {
-            self.products = successResponse;
-        }, function (errorResponse) {
-
-        });
     }
     this.fnInit();
     this.onSeasonSave = function (isValid) {
         if (isValid) {
+            self.seasonInfo.products = [];self.products.forEach(function (item) {
+                if (item.isSeasonProduct === true) {
+                    self.seasonInfo.products.push({
+                        seasonId: 0,
+                        productId: item.productId
+                    });
+                }
+            });
+            
             console.log(self.seasonInfo);
             seasonService.addUpdateSeason(self.seasonInfo).then(function (response) {
                 $state.go("seasons");

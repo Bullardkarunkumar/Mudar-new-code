@@ -189,7 +189,7 @@ namespace MudarService.Controllers
 
         [Route("buyerProducts")]
         [HttpPost]
-        public IHttpActionResult PostBuyerProducts(List<BuyerProductDetails> buyerProducts)
+        public IHttpActionResult PostBuyerProducts(List<BuyerProductDetail> buyerProducts)
         {
             try
             {

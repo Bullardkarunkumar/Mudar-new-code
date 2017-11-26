@@ -4,7 +4,7 @@
             <i class="fa fa-cogs"></i>Season List
         </div>
         <a href="javascript:;" id="btnNew" class="btn btn-success pull-right"
-           ng-click="seasonCtrl.onseasonEdit(null)">
+           ng-click="seasonCtrl.onSeasonEdit(null)">
             <i class="fa fa-plus"></i> New
         </a>
     </div>
@@ -24,8 +24,8 @@
                 </tr>
                 <tr ng-repeat="season in seasonCtrl.seasons">
                     <td> {{season.seasonName}}</td>
-                    <td>{{season.startDate}}</td>
-                    <td>{{season.endDate}}</td>
+                    <td>{{season.startDate | date: 'dd MMM yyyy'}}</td>
+                    <td>{{season.endDate | date: 'dd MMM yyyy'}}</td>
                     <td>
                         <a href="javascript:;" class="btn btn-small btn-sm green" ng-click="seasonCtrl.onSeasonEdit(season.seasonId)">
                             <i class="fa fa-edit"></i> Edit

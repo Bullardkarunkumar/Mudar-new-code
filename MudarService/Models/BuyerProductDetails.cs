@@ -8,7 +8,7 @@ using System.Web;
 namespace MudarService.Models
 {
     [Table("tblBuyerProductDetails")]
-    public class BuyerProductDetails : MudarBaseEntity
+    public class BuyerProductDetail : MudarBaseEntity
     {
         [Key]        
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

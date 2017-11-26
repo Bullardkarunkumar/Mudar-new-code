@@ -18,7 +18,7 @@
     }
 
 
-    this.onseasonEdit = function (seasonId) {
+    this.onSeasonEdit = function (seasonId) {
         $state.go('seasonDetails', { id: seasonId });
     }
 

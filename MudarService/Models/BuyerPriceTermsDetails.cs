@@ -14,10 +14,7 @@ namespace MudarService.Models
         public int BuyerPriceID { get; set; }
 
 
-        public bool CIF_Seaport {
-           get { return false; }
-        set { value == 0 ? false : true; }
-        }
+        public bool CIF_Seaport { set; get; }
         public string FOB_India { set; get; }
         public string CIF_Sea_By { set; get; }
         public string CIF_Air_By_EuropeandEastUSA { set; get; }
@@ -37,7 +34,7 @@ namespace MudarService.Models
         public string Delete { set; get; }
 
         [ForeignKey("ProductCategory")]
-        public Guid BuyerId { get; set; }
+        public int CategoryId { get; set; }
 
         public Category ProductCategory { get; set; }
 

@@ -23,8 +23,9 @@ namespace MudarDB.Models
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
-        public DbSet<BuyerProductDetails> BuyerProducts { get; set; }
+        public DbSet<BuyerProductDetail> BuyerProducts { get; set; }
         public DbSet<Season> Seasons { get; set; }
+        public DbSet<SeasonProductDetail> SeasonProducts { get; set; }
     }
     
 }

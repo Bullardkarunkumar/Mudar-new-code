@@ -18,8 +18,8 @@
                             </div>
                             <div class="col-md-1">
                                 <div class="md-radio">
-                                    <input type="radio" id="rbtnFob" value="1" ng-model="buyerInfo.pamentTerm"
-                                           name="pamentTerms" class="md-radiobtn" />
+                                    <input type="radio" id="rbtnFob" value="true" ng-model="buyerPriceTermDetails.bpt_100_advance"
+                                           name="paymentTerms" class="md-radiobtn" />
                                     <label for="rbtnFob">
                                         <span class="inc"></span>
                                         <span class="check"></span>
@@ -36,8 +36,8 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="md-radio">
-                                        <input type="radio" id="rbtnSea" value="2" ng-model="buyerInfo.pamentTerm"
-                                               name="pamentTerms" class="md-radiobtn" />
+                                        <input type="radio" id="rbtnSea" value="true" ng-model="buyerPriceTermDetails.bpt_50_adv_50_againstDocs"
+                                               name="paymentTerms" class="md-radiobtn" />
                                         <label for="rbtnSea">
                                             <span class="inc"></span>
                                             <span class="check"></span>
@@ -55,8 +55,8 @@
                                 <div class="col-md-1">
                                     <div class="md-radio">
 
-                                        <input type="radio" id="rbtnAir" value="3" ng-model="buyerInfo.pamentTerm"
-                                               name="pamentTerms" class="md-radiobtn" />
+                                        <input type="radio" id="rbtnAir" value="true" ng-model="buyerPriceTermDetails.bpt_100_againstDocs"
+                                               name="paymentTerms" class="md-radiobtn" />
                                         <label for="rbtnAir">
                                             <span class="inc"></span>
                                             <span class="check"></span>
@@ -74,8 +74,8 @@
                                 </div>
                                 <div class="col-md-1">
                                     <div class="md-radio">
-                                        <input type="radio" id="rbtnDest" value="4" ng-model="buyerInfo.pamentTerm"
-                                               name="pamentTerms" class="md-radiobtn" />
+                                        <input type="radio" id="rbtnDest" value="true" ng-model="buyerPriceTermDetails.noofDaysfromInvoice"
+                                               name="paymentTerms" class="md-radiobtn" />
                                         <label for="rbtnDest">
                                             <span class="inc"></span>
                                             <span class="check"></span>
@@ -89,8 +89,8 @@
                 <a href="javascript:;" class="btn green button-submit pull-left" ng-click="buyerStep8Ctrl.previousStep()">
                     <i class="fa fa-arrow-left"></i> Back
                 </a>
-                <a href="javascript:;" class="btn red button-submit pull-right" ng-click="buyerStep8Ctrl.nextStep()">
-                    Finish <i class="fa fa-thumbs-up"></i>
+                <a href="javascript:;" class="btn green button-submit pull-right" ng-click="buyerStep8Ctrl.lastStep()">
+                    Finish 
                 </a>
             </div>
         </form>

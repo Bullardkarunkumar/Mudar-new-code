@@ -9,10 +9,10 @@
         <form role="form" name="frmUserInfo" novalidate>
             <div class="form-body">
                 <div class="form-group form-md-line-input">
-                    <select ng-model="buyerInfo.transportMode"
+                    <select ng-model="buyerTransportDetails.transportMode"
                             class="form-control" name="transportMode" required>
                         <option value="">Select Transport Mode</option>
-                        <option value="1">Air</option>
+                        <option value="true">Air</option>
                         <option value="2">Sea</option>
                         <option value="3">Rail</option>
                         <option value="4">Road</option>
@@ -22,22 +22,22 @@
                         <span class="required" aria-required="true">*</span>
                     </label>
                 </div>
-                <div class="form-group form-md-line-input">
-                    <input type="text" id="txtairport" class="form-control" />
+                <div class="form-group form-md-line-input" ng-show="buyerTransportDetails.transportMode == 1">
+                    <input type="text" id="txtairport" class="form-control" ng-model="buyerTransportDetails.airportName" />
                     <label for="txtairport">Nearest Airport</label>
                 </div>
-                <div class="form-group form-md-line-input">
-                    <input type="text" id="txtsea" class="form-control">
+                <div class="form-group form-md-line-input" ng-show="buyerTransportDetails.transportMode == 2">
+                    <input type="text" id="txtsea" class="form-control" ng-model="buyerTransportDetails.seaportName" />
                     <label for="txtsea">Nearest Sea Port</label>
                 </div>
-                <div class="form-group form-md-line-input">
-                    <input type="text" id="txtroad" class="form-control">
-                    <label for="txtroad">Nearest Road</label>
-                </div>
-                <div class="form-group form-md-line-input">
-                    <input type="text" id="txtrail" class="form-control">
+                <div class="form-group form-md-line-input" ng-show="buyerTransportDetails.transportMode == 3">
+                    <input type="text" id="txtrail" class="form-control" ng-model="buyerTransportDetails.railStation" />
                     <label for="txtrail">Nearest Rail</label>
                 </div>
+                <div class="form-group form-md-line-input" ng-show="buyerTransportDetails.transportMode == 4">
+                    <input type="text" id="txtroad" class="form-control" ng-model="buyerTransportDetails.roadDestination" />
+                    <label for="txtroad">Nearest Road</label>
+                </div>                
                 <a href="javascript:;" class="btn green button-submit pull-left" ng-click="buyerStep6Ctrl.previousStep()">
                     <i class="fa fa-arrow-left"></i> Back
                 </a>

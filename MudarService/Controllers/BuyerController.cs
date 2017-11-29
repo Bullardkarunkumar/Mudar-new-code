@@ -218,6 +218,109 @@ namespace MudarService.Controllers
 
         }
 
+        [Route("buyerTransport")]
+        [HttpPost]
+        public IHttpActionResult PostBuyerTransportDetail(BuyerTransportDetails buyerTransportDetails)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            try
+            {
+               if (buyerTransportDetails.BuyerTransportId != 0)
+                {
+                    buyerTransportDetails.ModifiedBy = "superadmin";
+                    buyerTransportDetails.ModifiedDate = DateTime.Now;
+                    db.BuyerTransport.Attach(buyerTransportDetails);
+                    db.Entry(buyerTransportDetails).State = EntityState.Modified;
+                }
+                else
+                {
+                    db.BuyerTransport.Add(buyerTransportDetails);
+                }
+                db.SaveChanges();
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return InternalServerError(e);
+            }
+
+        }
+
+        [ResponseType(typeof(BuyerTransportDetails))]
+        [Route("buyerTransport/{id}")]
+        public IHttpActionResult GetBuyerTransportDetail(Guid id)
+        {
+            BuyerTransportDetails buyerTransportDetail = db.BuyerTransport.FirstOrDefault(x => x.BuyerId == id);
+            if (buyerTransportDetail == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(buyerTransportDetail);
+        }
+
+        [Route("buyerPriceTerm")]
+        [HttpPost]
+        public IHttpActionResult PostBuyerPriceTerm(BuyerPriceTermDetails buyerPriceTerm)
+        {
+             if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            try
+            {
+                if (buyerPriceTerm.BuyerPriceID != 0)
+                {
+                    buyerPriceTerm.ModifiedBy = "superadmin";
+                    buyerPriceTerm.ModifiedDate = DateTime.Now;
+                    db.BuyerPriceTerm.Attach(buyerPriceTerm);
+                    db.Entry(buyerPriceTerm).State = EntityState.Modified;
+                }
+                else
+                {
+                    db.BuyerPriceTerm.Add(buyerPriceTerm);
+                }
+                db.SaveChanges();
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return InternalServerError(e);
+            }
+
+        }
+
+        [ResponseType(typeof(BuyerPriceTermDetails))]
+        [Route("buyerPriceTerm/{id}")]
+        public IHttpActionResult GetBuyerPriceTerm(Guid id)
+        {
+            BuyerPriceTermDetails buyerPriceTerm = db.BuyerPriceTerm.FirstOrDefault(x => x.BuyerId == id);
+            if (buyerPriceTerm == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(buyerPriceTerm);
+        }
+        
+        [Route("postMailtoBuyer")]
+        [HttpPost]
+        public IHttpActionResult PostMailtoBuyer()
+        {
+            var buyerInfo = db.Buyers.Find(new Guid("9c525e3c-03f6-41d9-ad50-99ad66aba1c9"));
+            EmailSender email = new EmailSender();
+           // email.SendEmail();
+            return Ok();
+        }
+
+        private bool BuyerDetailExists(Guid id)
+        {
+            return db.Buyers.Count(e => e.BuyerId == id) > 0;
+        }
+        
         protected override void Dispose(bool disposing)
         {
             if (disposing)
@@ -227,9 +330,5 @@ namespace MudarService.Controllers
             base.Dispose(disposing);
         }
 
-        private bool BuyerDetailExists(Guid id)
-        {
-            return db.Buyers.Count(e => e.BuyerId == id) > 0;
-        }
     }
 }

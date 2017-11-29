@@ -48,7 +48,7 @@
         $window.scrollTo(0, 0);
     }
 
-    if ($scope.id != null && $scope.id != undefined && $scope.id != '') {
+    if ($scope.id) {
         identityService.getBuyer($scope.id).then(function (successRespone) {
             $scope.buyerInfo = successRespone;
             console.log($scope.buyerInfo);
@@ -149,11 +149,7 @@
     }
 }).controller('buyerStep5Controller', function ($scope, $state, $stateParams, identityService) {
     $scope.setProgressWith(5);
-
-    $scope.OnBankOrConsignee = function () {
-
-    }
-
+    
     this.nextStep = function () {
         $scope.addUpdateBuyer();
         $state.go('buyer.step6');
@@ -162,44 +158,80 @@
     this.previousStep = function () {
         $state.go('buyer.step4');
     }
-}).controller('buyerStep6Controller', function ($scope, $state, $stateParams, identityService) {
-    $scope.setProgressWith(6);
-    $scope.buyerTransportDetails = {};
-    if ($scope.id != null && $scope.id != undefined && $scope.id != '') {
-        identityService.getBuyerTransportDetails($scope.id).then(function (successRespone) {
+    }).controller('buyerStep6Controller', function ($scope, $state, $stateParams, userContextService, identityService, categoryProductService) {
+        $scope.setProgressWith(6);
+        $scope.id = userContextService.buyerId();
+        $scope.buyerTransportDetails = {};
+        $scope.buyerTransportDetails.buyerId = $scope.id;
+    if ($scope.id) {
+        categoryProductService.getBuyerTransportDetails($scope.id).then(function (successRespone) {
             $scope.buyerTransportDetails = successRespone;
             console.log($scope.buyerTransportDetails);
-        }, function (errorResponse) { })
+        }, function (errorResponse) {
+            
+            })
     }
 
     this.nextStep = function () {
-        $scope.addUpdateBuyer();
-        $state.go('buyer.step7');
+        categoryProductService.addUpdateBuyerTransport($scope.buyerTransportDetails).then(function (successResponse) {
+            $state.go('buyer.step7');
+        }, function (errorResponse) {
+
+        });
     }
 
     this.previousStep = function () {
         $state.go('buyer.step5');
     }
-}).controller('buyerStep7Controller', function ($scope, $state, $stateParams) {
-    $scope.setProgressWith(7);
-    var vm = this;
-    vm.priceTerm = "FOB India";
-    $scope.OnPriceTermSelected = function (value) {
-        vm.priceTerm = value;
+    }).controller('buyerStep7Controller', function ($scope, $state, $stateParams, userContextService, categoryProductService) {
+        $scope.setProgressWith(7);
+        $scope.id = userContextService.buyerId();
+        $scope.buyerPriceTermDetails = {};
+        $scope.buyerPriceTermDetails.buyerId = $scope.id;
+    if ($scope.id) {
+        categoryProductService.getBuyerPriceTermDetails($scope.id).then(function (successRespone) {
+            $scope.buyerPriceTermDetails = successRespone;
+            console.log($scope.buyerTransportDetails);
+        }, function (errorResponse) {
+            
+            })
     }
+   
     this.nextStep = function () {
-        $scope.addUpdateBuyer();
-        $state.go('buyer.step8');
+        categoryProductService.addUpdateBuyerPriceTerm($scope.buyerPriceTermDetails).then(function (successResponse) {
+            $state.go('buyer.step8');
+        }, function (errorResponse) {
+
+        });
     }
 
     this.previousStep = function () {
         $state.go('buyer.step6');
     }
-}).controller('buyerStep8Controller', function ($scope, $state, $stateParams) {
+    }).controller('buyerStep8Controller', function ($scope, $state, $stateParams, userContextService, categoryProductService) {
     $scope.setProgressWith(8);
-
+    $scope.id = userContextService.buyerId();
+    $scope.buyerPriceTermDetails = {};
+    $scope.buyerPriceTermDetails.buyerId = $scope.id;
+    if ($scope.id) {
+        categoryProductService.getBuyerPriceTermDetails($scope.id).then(function (successRespone) {
+            $scope.buyerPriceTermDetails = successRespone;
+            console.log($scope.buyerTransportDetails);
+        }, function (errorResponse) {
+            $scope.buyerPriceTermDetails.buyerId = $scope.id;})
+    }
     this.previousStep = function () {
         $state.go('buyer.step7');
+    }
+    this.lastStep = function () {
+        categoryProductService.addUpdateBuyerPriceTerm($scope.buyerPriceTermDetails).then(function (successResponse) {
+            $state.go('buyer.step8');
+            alert("Email will be sent to your registored e-mail ID");
+            categoryProductService.sendEmail($scope.id);
+            $state.go('buyer');    
+        }, function (errorResponse) {
+
+        });
     }
 });
 

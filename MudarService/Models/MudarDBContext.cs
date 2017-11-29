@@ -26,6 +26,8 @@ namespace MudarDB.Models
         public DbSet<BuyerProductDetail> BuyerProducts { get; set; }
         public DbSet<Season> Seasons { get; set; }
         public DbSet<SeasonProductDetail> SeasonProducts { get; set; }
+        public DbSet<BuyerTransportDetails> BuyerTransport { get; set; }
+        public DbSet<BuyerPriceTermDetails> BuyerPriceTerm { get; set; }
     }
     
 }

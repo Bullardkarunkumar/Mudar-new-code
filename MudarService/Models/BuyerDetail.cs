@@ -64,11 +64,17 @@ namespace MudarService.Models
         public string BankCountry { get; set; }
         //Step 5 End
 
-        //Step 6 Begin
-        [ForeignKey("BuyerPriceTermsDetails")]
-        public int BuyerPriceID { get; set; }
-        public BuyerPriceTermsDetails BuyerPriceTermsDetails { get;set;}
-        //Step 6 End
+        ////Step 6 Begin
+        //[ForeignKey("BuyerTransportDetails")]
+        //public int BuyerTransportId { get; set; }
+        //public BuyerTransportDetails BuyerTransportDetails { get; set; }
+        ////Step 6 End
+
+        ////Step 7 & 8 Begin
+        //[ForeignKey("BuyerPriceTermsDetails")]
+        //public int BuyerPriceID { get; set; }
+        //public BuyerTransportDetails BuyerPriceTermsDetails { get; set; }
+        ////Step 7 & 8 End
 
         public string BuyerCode { get; set; }
         public decimal Discount { get; set; }

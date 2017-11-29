@@ -624,6 +624,7 @@
     <Content Include="assets\global\img\social\youtube.png" />
     <Content Include="assets\global\img\syncfusion-icons-white.png" />
     <Content Include="assets\global\img\syncfusion-icons.png" />
+    <Content Include="assets\global\plugins\bootstrap-datetimepicker\js\bootstrap-datetimepicker.js" />
     <Content Include="assets\global\plugins\bootstrap-switch\css\bootstrap-switch.css" />
     <Content Include="assets\global\plugins\bootstrap-switch\css\bootstrap-switch.min.css" />
     <Content Include="assets\global\plugins\bootstrap\css\bootstrap.css" />
@@ -840,6 +841,8 @@
     <Content Include="assets\global\plugins\bootstrap\fonts\bootstrap\glyphicons-halflings-regular.woff" />
     <Content Include="assets\global\plugins\bootstrap\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
     <Content Include="scripts\app\services\mudar-Identity.service.js" />
+    <Content Include="assets\global\plugins\bootstrap-datetimepicker\less\bootstrap-datetimepicker-build.less" />
+    <Content Include="assets\global\plugins\bootstrap-datetimepicker\less\_bootstrap-datetimepicker.less" />
     <None Include="Properties\PublishProfiles\MudarWeb.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

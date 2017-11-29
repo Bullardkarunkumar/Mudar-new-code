@@ -113,46 +113,6 @@ D:\Mudar new code\MudarService\obj\Debug\MudarService.Migrations._09262.resource
 D:\Mudar new code\MudarService\obj\Debug\MudarService.csproj.GenerateResource.Cache
 D:\Mudar new code\MudarService\obj\Debug\MudarService.dll
 D:\Mudar new code\MudarService\obj\Debug\MudarService.pdb
-G:\Mudar\MudarService\bin\roslyn\csc.exe
-G:\Mudar\MudarService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-G:\Mudar\MudarService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-G:\Mudar\MudarService\bin\roslyn\Microsoft.CodeAnalysis.dll
-G:\Mudar\MudarService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-G:\Mudar\MudarService\bin\roslyn\Microsoft.CSharp.Core.targets
-G:\Mudar\MudarService\bin\roslyn\Microsoft.VisualBasic.Core.targets
-G:\Mudar\MudarService\bin\roslyn\System.Collections.Immutable.dll
-G:\Mudar\MudarService\bin\roslyn\System.Reflection.Metadata.dll
-G:\Mudar\MudarService\bin\roslyn\vbc.exe
-G:\Mudar\MudarService\bin\roslyn\VBCSCompiler.exe
-G:\Mudar\MudarService\bin\roslyn\VBCSCompiler.exe.config
-G:\Mudar\MudarService\bin\MudarService.dll.config
-G:\Mudar\MudarService\bin\MudarService.dll
-G:\Mudar\MudarService\bin\MudarService.pdb
-G:\Mudar\MudarService\bin\EntityFramework.dll
-G:\Mudar\MudarService\bin\EntityFramework.SqlServer.dll
-G:\Mudar\MudarService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-G:\Mudar\MudarService\bin\Newtonsoft.Json.dll
-G:\Mudar\MudarService\bin\System.Net.Http.Formatting.dll
-G:\Mudar\MudarService\bin\System.Web.Cors.dll
-G:\Mudar\MudarService\bin\System.Web.Http.Cors.dll
-G:\Mudar\MudarService\bin\System.Web.Http.dll
-G:\Mudar\MudarService\bin\System.Web.Http.WebHost.dll
-G:\Mudar\MudarService\bin\EntityFramework.xml
-G:\Mudar\MudarService\bin\EntityFramework.SqlServer.xml
-G:\Mudar\MudarService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-G:\Mudar\MudarService\bin\System.Web.Http.Cors.xml
-G:\Mudar\MudarService\bin\Newtonsoft.Json.xml
-G:\Mudar\MudarService\bin\System.Net.Http.Formatting.xml
-G:\Mudar\MudarService\bin\System.Web.Http.xml
-G:\Mudar\MudarService\bin\System.Web.Http.WebHost.xml
-G:\Mudar\MudarService\obj\Debug\MudarService.csprojResolveAssemblyReference.cache
-G:\Mudar\MudarService\obj\Debug\MudarService.Migrations.Initial.resources
-G:\Mudar\MudarService\obj\Debug\MudarService.Migrations._0926.resources
-G:\Mudar\MudarService\obj\Debug\MudarService.Migrations._09261.resources
-G:\Mudar\MudarService\obj\Debug\MudarService.Migrations._09262.resources
-G:\Mudar\MudarService\obj\Debug\MudarService.csproj.GenerateResource.Cache
-G:\Mudar\MudarService\obj\Debug\MudarService.dll
-G:\Mudar\MudarService\obj\Debug\MudarService.pdb
 F:\mudar\Mudar new code\MudarService\bin\roslyn\csc.exe
 F:\mudar\Mudar new code\MudarService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 F:\mudar\Mudar new code\MudarService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -188,3 +148,38 @@ F:\mudar\Mudar new code\MudarService\bin\System.Web.Http.WebHost.xml
 F:\mudar\Mudar new code\MudarService\obj\Debug\MudarService.dll
 F:\mudar\Mudar new code\MudarService\obj\Debug\MudarService.pdb
 F:\mudar\Mudar new code\MudarService\obj\Debug\MudarService.csprojResolveAssemblyReference.cache
+G:\Mudar\MudarService\obj\Debug\MudarService.csprojResolveAssemblyReference.cache
+G:\Mudar\MudarService\bin\roslyn\csc.exe
+G:\Mudar\MudarService\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Mudar\MudarService\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Mudar\MudarService\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Mudar\MudarService\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Mudar\MudarService\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Mudar\MudarService\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Mudar\MudarService\bin\roslyn\System.Collections.Immutable.dll
+G:\Mudar\MudarService\bin\roslyn\System.Reflection.Metadata.dll
+G:\Mudar\MudarService\bin\roslyn\vbc.exe
+G:\Mudar\MudarService\bin\roslyn\VBCSCompiler.exe
+G:\Mudar\MudarService\bin\roslyn\VBCSCompiler.exe.config
+G:\Mudar\MudarService\bin\MudarService.dll.config
+G:\Mudar\MudarService\bin\MudarService.dll
+G:\Mudar\MudarService\bin\MudarService.pdb
+G:\Mudar\MudarService\bin\EntityFramework.dll
+G:\Mudar\MudarService\bin\EntityFramework.SqlServer.dll
+G:\Mudar\MudarService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Mudar\MudarService\bin\Newtonsoft.Json.dll
+G:\Mudar\MudarService\bin\System.Net.Http.Formatting.dll
+G:\Mudar\MudarService\bin\System.Web.Cors.dll
+G:\Mudar\MudarService\bin\System.Web.Http.Cors.dll
+G:\Mudar\MudarService\bin\System.Web.Http.dll
+G:\Mudar\MudarService\bin\System.Web.Http.WebHost.dll
+G:\Mudar\MudarService\bin\EntityFramework.xml
+G:\Mudar\MudarService\bin\EntityFramework.SqlServer.xml
+G:\Mudar\MudarService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Mudar\MudarService\bin\System.Web.Http.Cors.xml
+G:\Mudar\MudarService\bin\Newtonsoft.Json.xml
+G:\Mudar\MudarService\bin\System.Net.Http.Formatting.xml
+G:\Mudar\MudarService\bin\System.Web.Http.xml
+G:\Mudar\MudarService\bin\System.Web.Http.WebHost.xml
+G:\Mudar\MudarService\obj\Debug\MudarService.dll
+G:\Mudar\MudarService\obj\Debug\MudarService.pdb

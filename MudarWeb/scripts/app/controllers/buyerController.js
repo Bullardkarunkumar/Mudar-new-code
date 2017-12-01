@@ -186,7 +186,18 @@
     }).controller('buyerStep7Controller', function ($scope, $state, $stateParams, userContextService, categoryProductService) {
         $scope.setProgressWith(7);
         $scope.id = userContextService.buyerId();
-        $scope.buyerPriceTermDetails = {};
+        $scope.buyerPriceTermDetails = {
+            cIF_Seaport: 0,
+            fOB_India: 0,
+            cIF_Sea_By: 0,
+            cIF_Air_By_EuropeandEastUSA: 0,
+            cIF_AIR_By_WEST_USA: 0,
+            bpt_100_advance: 0,
+            bpt_50_adv_50_againstDocs: 0,
+            bpt_100_againstDocs: 0,
+            no_of_Days_Count_fromInvoice: 0,
+            noofDaysfromInvoice: 0
+        };
         $scope.buyerPriceTermDetails.buyerId = $scope.id;
     if ($scope.id) {
         categoryProductService.getBuyerPriceTermDetails($scope.id).then(function (successRespone) {
@@ -211,7 +222,18 @@
     }).controller('buyerStep8Controller', function ($scope, $state, $stateParams, userContextService, categoryProductService) {
     $scope.setProgressWith(8);
     $scope.id = userContextService.buyerId();
-    $scope.buyerPriceTermDetails = {};
+    $scope.buyerPriceTermDetails = {
+        cIF_Seaport: 0,
+        fOB_India: 0,
+        cIF_Sea_By: 0,
+        cIF_Air_By_EuropeandEastUSA: 0,
+        cIF_AIR_By_WEST_USA: 0,
+        bpt_100_advance: 0,
+        bpt_50_adv_50_againstDocs: 0,
+        bpt_100_againstDocs: 0,
+        no_of_Days_Count_fromInvoice: 0,
+        noofDaysfromInvoice: 0
+    };
     $scope.buyerPriceTermDetails.buyerId = $scope.id;
     if ($scope.id) {
         categoryProductService.getBuyerPriceTermDetails($scope.id).then(function (successRespone) {
@@ -228,7 +250,7 @@
             $state.go('buyer.step8');
             alert("Email will be sent to your registored e-mail ID");
             categoryProductService.sendEmail($scope.id);
-            $state.go('buyer');    
+            $state.go('buyerList');    
         }, function (errorResponse) {
 
         });
